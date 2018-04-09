@@ -18,9 +18,9 @@
     {
         $page = 'home';
     }
-    if($q === 'lucas')
+    if($q === 'anim')
     {
-        $page = 'lucas';
+        $page = 'anim';
     }
     else
     {

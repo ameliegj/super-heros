@@ -1,0 +1,84 @@
+.lucasBack{
+    height: 100vh;
+    width:100vw;
+    background: #3D3D3D;
+    .animcard{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top:100px;
+        left:200px;
+        .animRound{
+            .circle{
+                position: absolute;
+                border-radius: 50%;
+                border: 3px solid white;
+                will-change: transform;
+            }
+            .circle1{
+                top:calc(50% - 75px);
+                left:calc(50% - 75px);
+                width:150px;
+                height:150px;
+                border-width:4px;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+                animation: rotation 1.4s linear infinite;
+            }
+            .circle2{
+                top:calc(50% - 60px);
+                left:calc(50% - 60px);
+                width:120px;
+                height:120px;
+                border-width: 4px;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                animation: rotation 0.8s linear infinite reverse;
+            }
+        }
+        
+    }   
+    .animcard2{
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top:100px;
+        left:800px;
+
+        
+        .animToreBar{
+            width: 100%;
+            height: 100%;
+            .contBar{
+                position: absolute;
+                left:50%;
+                top:150px;
+            }
+            .bar{
+                background: white;
+                position: absolute;
+                will-change: transform;
+                width:2px;
+                height:40px;
+                transform-origin: 0;
+                
+            }
+            
+            
+
+        }
+    }
+}
+@keyframes rotation {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+@keyframes rotation2 {
+    from{transform: rotate(45deg)}
+    to{transform: rotate(415deg)}
+}
+@keyframes bar {
+    0%{top:0;   }
+    50%{height:60px;}
+    100%{top: 0;}
+}
