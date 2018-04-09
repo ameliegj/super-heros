@@ -1,6 +1,6 @@
 <?php
     // Config
-    include 'config.php';
+    // include 'config.php';
     require_once 'views/actions/ChromePhp.php';
     
     // Routing
@@ -17,6 +17,10 @@
     if($q === '')
     {
         $page = 'home';
+    }
+    if($q === 'lucas')
+    {
+        $page = 'lucas';
     }
     else
     {
