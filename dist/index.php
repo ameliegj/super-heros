@@ -1,6 +1,7 @@
 <?php
     // Config
     include 'config.php';
+    require_once 'views/actions/ChromePhp.php';
     
     // Routing
 
@@ -23,9 +24,9 @@
     }
     
     // Includes
-    // include 'views/partials/header.php';
+    include 'views/partials/header.php';
     include 'views/pages/'.$page.'.php';
-    // include 'views/partials/footer.php';
+    include 'views/partials/footer.php';
 
 
 ?>
