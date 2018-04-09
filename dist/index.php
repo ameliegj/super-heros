@@ -24,9 +24,9 @@
     }
     
     // Includes
-    include 'views/partials/header.php';
+    include 'views/partials/head.php';
     include 'views/pages/'.$page.'.php';
-    include 'views/partials/footer.php';
+    include 'views/partials/foot.php';
 
 
 ?>
