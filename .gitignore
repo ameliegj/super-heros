@@ -3,6 +3,7 @@ dist/assets/css/style.min.css
 dist/assets/js/main.min.js
 .vscode
 
+config.php
 
 # Created by https://www.gitignore.io/api/node,macos,windows,visualstudiocode
 
