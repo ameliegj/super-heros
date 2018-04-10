@@ -18,8 +18,12 @@
         </div>
     </div>
     <div class="wheelContainer">
-        <div class="sideWheel col-md-2"></div>
-        <div class="midWheel col-md-8">
+        <div class="sideWheel col-md-4">
+            <div class="infoCadre">
+                <span>Lorem ipsum</span>
+            </div>
+        </div>
+        <div class="midWheel col-md-4">
                 <div class="animcard2">
                     <div class="animToreBar">
                         <div class="contBar1 contBar">
@@ -241,11 +245,10 @@
                     </div>              
                 </div>
         </div>
-        <div class="sideWheel col-md-2">
+        <div class="sideWheel col-md-4">
 
         </div>
-    </div> 
-</div>  
+    </div>  
 </section>
 
 
