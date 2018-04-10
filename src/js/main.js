@@ -14,7 +14,6 @@
         }    
     }                                                             
     setTimeout(runDonut(),1000)
-
     const appearDonut = (number) => {
         let infoCadre=document.createElement("div")
         let pCadre=document.createElement("p")
@@ -40,6 +39,13 @@
             infoCadre.style.transform="rotate(-300deg) translateY(-300px)"
             pCadre.innerHTML="Test2";
             break;
+            case "3":
+            flatLink.classList.add("linkRFlat3")
+            infoCadre.classList.add("infoCadre3")
+            parentCadre=document.querySelector(".bar10")
+            infoCadre.style.transform="rotate(-50deg) translateY(-300px)"
+            pCadre.innerHTML="Test3";
+            break;
             
 
         }
@@ -54,8 +60,34 @@
             flatLink.style.opacity=1;
             pCadre.style.animation="textDisappear 0.4s ease-in-out forwards "
             flatLink.style.animation="lineDisappear 0.4s ease-in-out forwards 0.4s"
-            
+            setTimeout(function(){
+                switch(number){
+                case "1":
+                    document.querySelector(".bar23").style.height="70px"
+                    document.querySelector(".bar23").style.animation="donutDeselect 0.4s ease-in-out forwards 0.8s"
+                break;
+                case "2":
+                    document.querySelector(".bar60").style.height="70px"
+                    document.querySelector(".bar60").style.animation="donutDeselect 0.4s ease-in-out forwards 0.8s"
+                break; 
+                case "3":
+                    document.querySelector(".bar10").style.height="70px"
+                    document.querySelector(".bar10").style.animation="donutDeselect 0.4s ease-in-out forwards 0.8s"
+                break;        
+            }
+        },900)
         },5000)
 
     }
-    setTimeout(appearDonut("2"),1100)
+    const swicthDonuts = () => {
+        
+        appearDonut("1")
+        let k=1;
+        setInterval(() => {
+            k++
+            let l= String(k)
+            appearDonut(l)
+        },6000)
+    }
+    swicthDonuts()
+    
