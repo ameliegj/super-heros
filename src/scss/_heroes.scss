@@ -1,0 +1,75 @@
+.heroesContainer {
+    margin: 0;
+    background-color: black;
+    height: 100%;
+
+    header {
+        background-color: white;
+        height: 40px;
+        a {
+            font-size: 23px;
+            color: black;
+        }
+    }
+
+
+    .form-1 {
+        border: solid;
+        border-color: white;
+        margin-top: 40px;
+        background-color: white;
+        transform: skewX(-30deg);
+
+        input {
+            transform: skewX(30deg);
+        }
+
+
+    }
+    .form-2 {
+        border: solid;
+        border-color: red;
+        background-color: red;
+        margin-top: 40px;
+        transform: skewX(-30deg);
+        input {
+            transform: skewX(30deg);
+        }
+        select {
+            transform: skewX(30deg);
+        }
+    }
+
+    article {
+
+
+        padding: 0;
+        color: white;
+
+        .heroName {
+            margin-top: 80px;
+            padding: 0;
+        }
+        .heroUnderName {
+
+            padding: 0;
+        }
+        .heroPictures {
+
+            margin-top: 40px;
+            padding: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: white;
+        }
+        .description {
+            margin-top: 40px;
+            padding: 0;
+        }
+        .descriptonText {
+
+            padding: 0;
+        }
+    }
+}
