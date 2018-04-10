@@ -63,7 +63,18 @@
     .wheelContainer{
         height:930px;
         background: black;
-        
+        .sideWheel{
+            .infoCadre{
+                font-size:30px;
+                span{
+                    color:white;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    
+                }
+            }
+        }
         .midWheel{
             position: relative;
         }
@@ -71,7 +82,7 @@
             height: 400px;
             width: 400px;
             position: absolute;
-            top:90px;
+            top:50px; 
             left:calc(50% - 200px);
             .animToreBar{
                 width: 100%;
