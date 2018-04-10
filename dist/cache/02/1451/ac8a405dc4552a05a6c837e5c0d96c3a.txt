@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"deck":"A social worker turned hero, Sam Wilson's bleak outlook on life was wiped away the day he met Captain America. Using a winged costume and his remarkable combat prowess and avian telepathy, he became the Falcon - defender of Harlem."},"version":"1.0"}

@@ -17,23 +17,27 @@
     switch($q)
     {
         case '':
-        $page='home';
-        break;
+            $page='home';
+            break;
         case 'anim':
-        $page = 'anim';
-        break;
+            $page = 'anim';
+            break;
         case 'home':
-        $page = 'home';
-        break;
+            $page = 'home';
+            break;
         case 'heroes':
-        $page = "heroes";
-        break;
+            $page = "heroes";
+            break;
+        case 'amelie':
+            $page = "amelie";
+            break;
+        case 'amelie2':
+            $page = "amelie2";
+            break;
         default:
-        $page='404';
-        break;
-
-    }
-    
+            $page='404';
+            break;
+    } 
     
     // Includes
     include 'views/partials/head.php';
