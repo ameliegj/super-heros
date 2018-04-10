@@ -14,18 +14,23 @@
         $q = $_GET['q'];
     }
 
-    if($q === '')
+    switch($q)
     {
-        $page = 'home';
-    }
-    if($q === 'anim')
-    {
+        case '':
+        $page='home';
+        break;
+        case 'anim':
         $page = 'anim';
+        break;
+        case 'home':
+        $page = 'home';
+        break;
+        default:
+        $page='404';
+        break;
+
     }
-    else
-    {
-        $page = '404';
-    }
+    
     
     // Includes
     include 'views/partials/head.php';

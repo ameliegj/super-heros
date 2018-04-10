@@ -9,6 +9,5 @@ for(let i=1; i<=74;i++){
     let currentDelay = i * Math.random()*0.02;
     currentContBar.style.transform=" rotate("+currentAngle+"deg) translateY(150px) ";
     currentBar.style.animation="bar 0.6s   "+currentDelay+"s cubic-bezier(.17,.67,.24,.99)";
-    
-    
+
 }

@@ -1,0 +1,68 @@
+.homeContainer{
+    .landingContainer{
+        height: 100vh;
+        overflow: hidden;
+        width: 100%;
+        background-image:url("../img/poster.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .introLaunding{
+            text-transform: uppercase;
+            color: white;
+            width: 700px;
+            margin-left: calc(50% - 350px);
+            text-align: center;
+            font-weight:bolder;
+            padding-top: 305px;
+            h1{
+                font-size: 50px;
+                // letter-spacing: 7.6px;
+                
+            }
+            
+        }
+        .discoverLaunding{
+            width: 152px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left:calc(50% - 76px);
+            span{
+                text-transform: uppercase;
+                font-size: 15px;
+                letter-spacing: 11px;
+                font-weight: bolder;
+                
+            }
+        }
+    }
+    .gauntletContainer{
+        height:630px;
+        background: black;
+        .gauntletIntro{
+            width: 66.66%;
+            padding-left: 33.33%;
+            padding-top: 90px;  
+            margin: 0;
+            h2{
+                text-transform: uppercase;
+                width: 600px;
+            }
+            p{
+                width: 725px;
+                height: 130px;
+                color: white;
+                padding-top : 46px;
+                font-size:18px;
+                padding-left:130px;
+                text-align: left;
+            }
+        }
+    }
+    .wheelContainer{
+        height:630px;
+        background: black;
+        border-top:solid 1px white;
+    }
+}
