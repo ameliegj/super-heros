@@ -64,19 +64,43 @@
         height:930px;
         background: black;
         .sideWheel{
+            
+        }
+        .midWheel{
+            position: relative;
             .infoCadre{
-                font-size:30px;
-                span{
+                font-size:25px;
+                width:400px;
+                position: relative;
+                p{
+                    display: inline-block;
+                    width: 300px;
                     color:white;
                     font-weight: 100;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    font-family: "Calibri";
+                    padding:0px 30px;
+                    will-change: opacity;
+                    opacity: 0;                }
+                .linkR{
+                    width: 161px;
+                    height:2px;
+                    background-color: black;
+                    position: absolute;
+                    top:calc(40% - 1px);
+                    left:calc(80% - 50px);
+                    transform-origin: 100%;
+                    will-change: transform;
                     
                 }
+
+
             }
-        }
-        .midWheel{
-            position: relative;
+            .infoCadre1{
+                top:100px;
+                left:181px;
+            }
         }
         .animcard2{
             height: 400px;
