@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"deck":"A native of the planet Halfworld in the Keystone Quadrant, Rocket Raccoon is a longtime member of the Guardians of the Galaxy, usually serving as the team's strategist."},"version":"1.0"}

@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"deck":"Peter Quill is the first and current Star-Lord, a human-alien hybrid and leader of the Guardians of the Galaxy. He is the son of J'son of Spartax who is King of the Spartoi Empire."},"version":"1.0"}

@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"deck":"Groot is an extraterrestrial, sentient tree-like creature, and the monarch of Planet X. He is a founding member of Star-Lord's Guardians of the Galaxy, and is known for his longtime friendship with Rocket Raccoon."},"version":"1.0"}

@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"deck":"Scott Lang was the second man to take up the mantle of Ant-Man. He has been a member of the Avengers and the Fantastic Four."},"version":"1.0"}
