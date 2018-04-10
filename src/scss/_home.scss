@@ -85,14 +85,22 @@
                     opacity: 0;                }
                 .linkR{
                     width: 161px;
-                    height:2px;
-                    background-color: black;
+                    height:2.5px;
+                    background-color: $marvel;
+                    opacity:0;
                     position: absolute;
+                    transform-origin: 100%;
+                    will-change: transform,opacity;
+
+                }
+                .linkRFlat{
                     top:calc(40% - 1px);
                     left:calc(80% - 50px);
-                    transform-origin: 100%;
-                    will-change: transform;
-                    
+                }
+                .linkRFlat2{
+                    top:calc(40% - 1px);
+                    left:-35%;     
+                    transform-origin:0; 
                 }
 
 
@@ -101,6 +109,10 @@
                 top:100px;
                 left:181px;
             }
+            .infoCadre2{
+                top:503px;
+                left:-293px;
+            }
         }
         .animcard2{
             height: 400px;
@@ -108,6 +120,12 @@
             position: absolute;
             top:50px; 
             left:calc(50% - 200px);
+            background-image: url('../img/marvelLogo.png');
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-Y: 80px;
+        
             .animToreBar{
                 width: 100%;
                 height: 100%;

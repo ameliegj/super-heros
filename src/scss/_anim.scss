@@ -86,11 +86,20 @@
     0%{background:$marvel}
     100%{height:80px;background:$marvel;width:2px;}
 }
+
 @keyframes lineAppear{
-    from{transform: scaleX(0);background-color: $marvel}
-    to{transform: scaleX(1);background-color: $marvel}
+    from{transform: scaleX(0);background-color: $marvel;opacity: 1;}
+    to{transform: scaleX(1);background-color: $marvel;opacity: 1}
+}
+@keyframes lineDisappear{
+    from{background-color: $marvel;opacity:1;}
+    to{transform: scaleX(0);background-color: $marvel;opacity:1;}
 }
 @keyframes textAppear{
     from{opacity: 0;}
     to{opacity: 1;}
+}
+@keyframes textDisappear{
+    from{opacity: 1;}
+    to{opacity: 0;}
 }

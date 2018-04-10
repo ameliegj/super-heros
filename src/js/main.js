@@ -21,17 +21,24 @@
         let flatLink=document.createElement("div")
         let skewLink=document.createElement("div")
         infoCadre.classList.add("infoCadre")
-        flatLink.classList.add("linkRFlat")
         flatLink.classList.add("linkR")
         skewLink.classList.add("linkSFlat1")
         skewLink.classList.add("linkR")
         let parentCadre;
         switch(number){
             case "1" :
+            flatLink.classList.add("linkRFlat")
             infoCadre.classList.add("infoCadre1")
             parentCadre=document.querySelector(".bar23")
             infoCadre.style.transform="rotate(-115deg) translateY(-300px)"
             pCadre.innerHTML="32.500 comics sont paru depuis la création";
+            break;
+            case "2":
+            flatLink.classList.add("linkRFlat2")
+            infoCadre.classList.add("infoCadre2")
+            parentCadre=document.querySelector(".bar60")
+            infoCadre.style.transform="rotate(-300deg) translateY(-300px)"
+            pCadre.innerHTML="Test2";
             break;
             
 
@@ -43,6 +50,12 @@
         flatLink.style.animation="lineAppear 0.4s ease-in-out forwards 0.4s"
         parentCadre.style.animation="donutSelect 0.4s ease-in-out forwards"
         
+        setTimeout(function(){
+            flatLink.style.opacity=1;
+            pCadre.style.animation="textDisappear 0.4s ease-in-out forwards "
+            flatLink.style.animation="lineDisappear 0.4s ease-in-out forwards 0.4s"
+            
+        },5000)
 
     }
-    setTimeout(appearDonut("1"),1100)
+    setTimeout(appearDonut("2"),1100)

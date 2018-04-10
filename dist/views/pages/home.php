@@ -19,8 +19,7 @@
     </div>
     <div class="wheelContainer">
         <div class="midWheel col-md-12">
-            
-                <div class="animcard2">
+            <div class="animcard2">
                     <div class="animToreBar">
                         <?php
                         for($i=1;$i<=74;$i++){
@@ -32,7 +31,8 @@
                         }
                         ?>                      
                     </div>              
-                </div>
+            </div>
+            
         </div>
         
     </div>  
