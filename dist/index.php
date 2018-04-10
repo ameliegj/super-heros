@@ -25,6 +25,9 @@
         case 'home':
         $page = 'home';
         break;
+        case 'heroes':
+        $page = "heroes";
+        break;
         default:
         $page='404';
         break;

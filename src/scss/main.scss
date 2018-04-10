@@ -1,15 +1,16 @@
 @import 'anim';
 @import 'home';
+@import 'heroes';
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     font-family: 'Lato';
-    h2{
+    h2 {
         font-weight: bolder;
-        font-size:30px;
+        font-size: 30px;
         color: white;
     }
 }
