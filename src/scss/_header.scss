@@ -3,9 +3,10 @@ header{
     width: 100vw;
     position: fixed;
     z-index: 2;
+    top:0;
     
     .headerContainer{
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         opacity: 1;
         .headerBack{
