@@ -1,4 +1,5 @@
 .homeContainer{
+
     .landingContainer{
         height: 100vh;
         overflow: hidden;
@@ -159,6 +160,7 @@
         }
     }
     .relationContainer{
+       
         height:300px;
         border-top:1px white solid;
         .relationBack{
@@ -166,7 +168,10 @@
             height: 650px;
             margin-left: calc(50% - 600Px);
             border: solid white 1px;
+            position: relative;
             .relationWheel{
+                position: absolute;
+                top:50%;
                 .relBar{
 
                 }

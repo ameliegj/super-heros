@@ -82,9 +82,12 @@
         appearDonut("1")
         let k=1;
         setInterval(() => {
-            k++
-            let l= String(k)
-            appearDonut(l)
+            if(k<=3){
+                k++
+                let l= String(k)
+                appearDonut(l)
+            }
+            
         },6000)
 
         // if(k==3){
@@ -99,18 +102,15 @@
         for(let i=1; i<=37;i++){
             let currentRel=document.querySelector(".relHero"+i);
             let currentContRel=document.querySelector(".relBar"+i);
-            let currentAngle
-            if (i>10){
-                currentAngle = i *  - 4.5
-            }
-            else{
-                currentAngle = i * - 9
-            }  
-            console.log(i)
-            let currentTranslate = i*20;
-            let currentDelay = i * Math.random()*0.2;
-            currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(20px) ";
-            currentRel.style.animation="bar 2s infinite  "+currentDelay+"s cubic-bezier(.17,.67,.24,.99)";
+            let currentAngle= i * - 9
+            if (i > 10){
+                currentRel.style.transform="rotate(-180deg)"
+                
+                
+            }    
+        
+            currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) ";
+            
         }    
     } 
     runRelation()
