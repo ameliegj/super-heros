@@ -1,4 +1,5 @@
     //HOME
+const homeAnimation = () =>{
     //donuts
     const  runDonut = () => {
         for(let i=1; i<=74;i++){
@@ -115,5 +116,9 @@
     } 
     runRelation()
 
-    
+}
+if(window.location.href.indexOf("/heroes") != -1  ){
+
+}
+
     

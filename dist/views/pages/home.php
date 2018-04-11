@@ -63,5 +63,8 @@
         
     </div>
 </section>
-
-
+    
+<script src="assets/js/main.min.js"> </script>
+<script>
+    homeAnimation()
+</script>
