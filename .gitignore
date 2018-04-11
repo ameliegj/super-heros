@@ -1,7 +1,5 @@
 node_modules
-
 .vscode
-
 config.php
 
 # Created by https://www.gitignore.io/api/node,macos,windows,visualstudiocode

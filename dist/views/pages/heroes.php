@@ -5,20 +5,17 @@
     <form action="#">
         <div class="form-1 col-lg-offset-1 col-lg-1">
             <input type="text">
-
         </div>
         <div class="form-2 col-lg-offset-1 col-lg-1">
             <input type="submit">
-
         </div>
         <div class="form-2 col-lg-offset-1 col-lg-1">
             <select name='hero'> 
-             <optgroup>
-                 <option class="bob" value="bob">bob</option>
-                 <option value="bo">bo</option>
-             </optgroup>
-             
-             </select>
+            <optgroup>
+                <option class="bob" value="bob">bob</option>
+                <option value="bo">bo</option>
+            </optgroup>
+            </select>
 
         </div>
 

@@ -6,7 +6,7 @@ $url = 'http://comicvine.gamespot.com/api/movie/4025-2297/?api_key=e8ac7c91ab822
 
 $path = './cache/01/' . md5($url) . '.txt' ;
 
-if(file_exists($path) && time() - filemtime($path) < 3600)
+if(file_exists($path) && time() - filemtime($path) < 43200)
 {
     $data = file_get_contents($path);
     $data = json_decode($data);
@@ -39,7 +39,7 @@ else
     }
     $path2 = './cache/02/'.$id.'/' . md5($url) . '.txt' ;
 
-    if(file_exists($path2) && time() - filemtime($path2) < 3600)
+    if(file_exists($path2) && time() - filemtime($path2) < 43200)
     {
         $data2 = file_get_contents($path2);
     }
@@ -61,3 +61,10 @@ else
     <?= $data2->results->deck ?>
 </p>
 <?php endforeach; ?>
+
+<style>
+    body {
+        background-color : black;
+        color : white;
+    }
+</style>

@@ -1,9 +1,4 @@
 @import 'variables';
-@import 'anim';
-@import 'home';
-@import 'heroes';
-@import 'header';
-
 
 body{
     height: 100vh;
@@ -11,9 +6,16 @@ body{
     overflow-x: hidden;
     margin: 0;
     font-family: 'Lato';
+    color: $white;
     h2{
         font-weight: bolder;
         font-size:30px;
-        color: white;
+        color: $white;
     }
+    background-color: $black;
 }
+
+@import 'anim';
+@import 'home';
+@import 'heroes';
+@import '404';
