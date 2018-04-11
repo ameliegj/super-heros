@@ -1,4 +1,9 @@
 @import 'variables';
+@import 'anim';
+@import 'home';
+@import 'heroes';
+@import '404';
+@import 'header';
 
 body{
     height: 100vh;
@@ -15,7 +20,3 @@ body{
     background-color: $black;
 }
 
-@import 'anim';
-@import 'home';
-@import 'heroes';
-@import '404';

@@ -37,7 +37,20 @@
         
     </div>  
     <div class="relationContainer">
-        
+        <div class="relationBack">
+            <div class="relationWheel col-sm-8">
+                <?php
+                    for($i=1;$i<=37;$i++){
+                    ?>
+                        <div class="relBar<?=$i?> relBar">
+                            <div class="relHero relHero<?=$i?>">Test<?=$i?></div>
+                        </div>
+                    <?php
+                    }
+                    ?>     
+                </div>
+
+        </div>
     </div>
 </section>
 

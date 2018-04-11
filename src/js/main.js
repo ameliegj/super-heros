@@ -93,5 +93,27 @@
     }
     swicthDonuts()
 
+    // Relation wheel
+
+    const runRelation = () => {
+        for(let i=1; i<=37;i++){
+            let currentRel=document.querySelector(".relHero"+i);
+            let currentContRel=document.querySelector(".relBar"+i);
+            let currentAngle
+            if (i>10){
+                currentAngle = i *  9
+            }
+            else{
+                currentAngle = i * - 9
+            }  
+            console.log(i)
+            let currentTranslate = i*20;
+            let currentDelay = i * Math.random()*0.2;
+            currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(20px) ";
+            currentRel.style.animation="bar 2s infinite  "+currentDelay+"s cubic-bezier(.17,.67,.24,.99)";
+        }    
+    } 
+    runRelation()
+
     
     

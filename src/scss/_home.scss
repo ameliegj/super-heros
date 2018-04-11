@@ -61,7 +61,7 @@
         }
     }
     .wheelContainer{
-        height:930px;
+        height:630px;
         background: black;
         .sideWheel{
             
@@ -156,6 +156,25 @@
                 
     
             }
+        }
+    }
+    .relationContainer{
+        height:300px;
+        border-top:1px white solid;
+        .relationBack{
+            width: 1200px;
+            height: 650px;
+            margin-left: calc(50% - 600Px);
+            border: solid white 1px;
+            .relationWheel{
+                .relBar{
+
+                }
+                .relHero{
+                    position: absolute;
+                }
+            }
+
         }
     }
 }
