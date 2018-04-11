@@ -1,7 +1,4 @@
 <section class="heroesContainer">
-
-
-
     <form action="#">
         <div class="form-1 col-lg-offset-1 col-lg-1">
             <input type="text">
