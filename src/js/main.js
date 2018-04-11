@@ -79,7 +79,6 @@
 
     }
     const swicthDonuts = () => {
-        
         appearDonut("1")
         let k=1;
         setInterval(() => {
@@ -87,6 +86,10 @@
             let l= String(k)
             appearDonut(l)
         },6000)
+
+        // if(k==3){
+        //     setTimeout(swicthDonuts(),6000)
+        // }
     }
     swicthDonuts()
 
