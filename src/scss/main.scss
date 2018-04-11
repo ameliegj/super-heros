@@ -1,9 +1,5 @@
 @import 'variables';
-@import 'anim';
-@import 'home';
-@import 'heroes';
-@import '404';
-@import 'header';
+
 
 body {
     height: 100vh;
@@ -19,3 +15,12 @@ body {
     }
     background-color: $black
 }
+<<<<<<< HEAD
+=======
+
+@import 'anim';
+@import 'home';
+@import 'header';
+@import 'heroes';
+@import '404';
+>>>>>>> commit
