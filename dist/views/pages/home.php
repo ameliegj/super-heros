@@ -52,6 +52,16 @@
 
         </div>
     </div>
+    <div class="ratingContainer">
+        <div class="rating">
+            <span>kills</span>
+            <div class="lacet"></div>
+            <div class="bubble"></div>
+            
+        </div>
+        
+        
+    </div>
 </section>
 
 

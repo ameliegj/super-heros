@@ -1,180 +1,186 @@
-.homeContainer{
-    .landingContainer{
+.homeContainer {
+    .landingContainer {
         height: 100vh;
         overflow: hidden;
         width: 100%;
-        background-image:url("../img/poster.png");
+        background-image: url("../img/poster.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        .introLaunding{
+        .introLaunding {
             text-transform: uppercase;
             color: white;
             width: 700px;
             margin-left: calc(50% - 350px);
             text-align: center;
-            font-weight:bolder;
+            font-weight: bolder;
             padding-top: 305px;
-            h1{
-                font-size: 50px;
-                // letter-spacing: 7.6px;
-                
+            h1 {
+                font-size: 50px; // letter-spacing: 7.6px;
             }
-            
+
         }
-        .discoverLaunding{
+        .discoverLaunding {
             width: 152px;
             text-align: center;
             color: white;
             position: absolute;
             bottom: 20px;
-            left:calc(50% - 76px);
-            span{
+            left: calc(50% - 76px);
+            span {
                 text-transform: uppercase;
                 font-size: 15px;
                 letter-spacing: 11px;
                 font-weight: bolder;
-                
+
             }
         }
     }
-    .gauntletContainer{
-        height:630px;
+    .gauntletContainer {
+        height: 630px;
         background: black;
-        .gauntletIntro{
+        .gauntletIntro {
             width: 66.66%;
             padding-left: 33.33%;
-            padding-top: 90px;  
+            padding-top: 90px;
             margin: 0;
-            h2{
+            h2 {
                 text-transform: uppercase;
                 width: 600px;
             }
-            p{
+            p {
                 width: 725px;
                 height: 130px;
                 color: white;
-                padding-top : 46px;
-                font-size:18px;
-                padding-left:130px;
+                padding-top: 46px;
+                font-size: 18px;
+                padding-left: 130px;
                 text-align: left;
             }
         }
     }
-    .wheelContainer{
-        height:630px;
+    .wheelContainer {
+        height: 630px;
         background: black;
-        .sideWheel{
-            
-        }
-        .midWheel{
+        .sideWheel {}
+        .midWheel {
             position: relative;
-            .infoCadre{
-                font-size:25px;
-                width:400px;
+            .infoCadre {
+                font-size: 25px;
+                width: 400px;
                 position: relative;
-                p{
+                p {
                     display: inline-block;
                     width: 300px;
-                    color:white;
+                    color: white;
                     font-weight: 100;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     font-family: "Calibri";
-                    padding:0px 30px;
+                    padding: 0px 30px;
                     will-change: opacity;
-                    opacity: 0;                }
-                .linkR{
+                    opacity: 0;
+                }
+                .linkR {
                     width: 161px;
-                    height:2.5px;
+                    height: 2.5px;
                     background-color: $marvel;
-                    opacity:0;
+                    opacity: 0;
                     position: absolute;
                     transform-origin: 100%;
-                    will-change: transform,opacity;
+                    will-change: transform, opacity;
 
                 }
-                .linkRFlat{
-                    top:calc(40% - 1px);
-                    left:calc(80% - 50px);
+                .linkRFlat {
+                    top: calc(40% - 1px);
+                    left: calc(80% - 50px);
                 }
-                .linkRFlat2{
-                    top:calc(40% - 1px);
-                    left:-35%;     
-                    transform-origin:0; 
+                .linkRFlat2 {
+                    top: calc(40% - 1px);
+                    left: -35%;
+                    transform-origin: 0;
                 }
-                .linkRFlat3{
-                    top:calc(40% - 1px);
-                    left:35%;     
-                    
+                .linkRFlat3 {
+                    top: calc(40% - 1px);
+                    left: 35%;
+
                 }
 
 
             }
-            .infoCadre1{
-                top:100px;
-                left:181px;
+            .infoCadre1 {
+                top: 100px;
+                left: 181px;
             }
-            .infoCadre2{
-                top:503px;
-                left:-293px;
+            .infoCadre2 {
+                top: 503px;
+                left: -293px;
             }
-            .infoCadre3{
-                top:329px;
-                left:-30px;
+            .infoCadre3 {
+                top: 329px;
+                left: -30px;
             }
         }
-        .animcard2{
+        .animcard2 {
             height: 400px;
             width: 400px;
             position: absolute;
-            top:50px; 
-            left:calc(50% - 200px);
+            top: 50px;
+            left: calc(50% - 200px);
             background-image: url('../img/marvelLogo.png');
             background-size: 300px;
             background-repeat: no-repeat;
             background-position-x: center;
             background-position-Y: 80px;
-        
-            .animToreBar{
+
+            .animToreBar {
                 width: 100%;
                 height: 100%;
-                .contBar{
+                .contBar {
                     position: absolute;
-                    left:50%;
-                    top:150px;
+                    left: 50%;
+                    top: 150px;
                 }
-                .bar{
+                .bar {
                     background: white;
                     position: absolute;
                     will-change: transform;
-                    width:2px;
-                    height:40px;
+                    width: 2px;
+                    height: 40px;
                     transform-origin: 0;
-                    
+
                 }
-                
-                
-    
+
+
+
             }
         }
     }
-    .relationContainer{
-        height:300px;
-        border-top:1px white solid;
-        .relationBack{
+    .relationContainer {
+        height: 300px;
+        border-top: 1px white solid;
+        .relationBack {
             width: 1200px;
             height: 650px;
             margin-left: calc(50% - 600Px);
             border: solid white 1px;
-            .relationWheel{
-                .relBar{
-
-                }
-                .relHero{
+            .relationWheel {
+                .relBar {}
+                .relHero {
                     position: absolute;
                 }
             }
 
         }
     }
+    .ratingContainer {
+        margin-top: 300px;
+        span {}
+        .lacet {
+            background-color: white;
+            width: 200;
+            height: 2px;
+        }
+
+    }
+
 }
