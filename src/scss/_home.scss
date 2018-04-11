@@ -174,12 +174,166 @@
     }
     .ratingContainer {
         margin-top: 300px;
-        span {}
-        .lacet {
-            background-color: white;
-            width: 200;
-            height: 2px;
+        .rating {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            span {}
+            .lacet {
+                margin: -10px 0px 0px 220px;
+                background-color: white;
+                width: 52%;
+                height: 2px;
+                animation-name: lacetRize;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                transform-origin: 0% 50%;
+                @keyframes lacetRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+            }
+            .lacetBlue {
+                margin: -10px 0px 0px 330px;
+                background-color: white;
+                width: 45%;
+                height: 2px;
+                animation-name: lacetRize;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                transform-origin: 0% 50%;
+                @keyframes lacetRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+            }
+            .bubble {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: red;
+                border-radius: 50px;
+                background-color: $marvel;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+            .bubbleGreen {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: greenyellow;
+                border-radius: 50px;
+                background-color: greenyellow;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+            .bubbleBlue {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: skyblue;
+                border-radius: 50px;
+                background-color: skyblue;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
         }
+
+
 
     }
 

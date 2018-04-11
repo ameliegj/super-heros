@@ -8,7 +8,7 @@
             <span>DISCOVER</span>
             <i class="fa fa-chevron-down"></i>
         </div>
-        
+
     </div>
 
     <div class="gauntletContainer">
@@ -20,45 +20,51 @@
     <div class="wheelContainer">
         <div class="midWheel col-md-12">
             <div class="animcard2">
-                    <div class="animToreBar">
-                        <?php
+                <div class="animToreBar">
+                    <?php
                         for($i=1;$i<=74;$i++){
                         ?>
-                            <div class="contBar<?=$i?> contBar">
-                                <div class="bar bar<?=$i?>"></div>
-                            </div>
+                        <div class="contBar<?=$i?> contBar">
+                            <div class="bar bar<?=$i?>"></div>
+                        </div>
                         <?php
                         }
-                        ?>                      
-                    </div>              
+                        ?>
+                </div>
             </div>
-            
+
         </div>
-        
-    </div>  
+
+    </div>
     <div class="relationContainer">
         <div class="relationBack">
             <div class="relationWheel col-sm-8">
                 <?php
                     for($i=1;$i<=37;$i++){
                     ?>
-                        <div class="relBar<?=$i?> relBar">
-                            <div class="relHero relHero<?=$i?>">Test<?=$i?></div>
+                    <div class="relBar<?=$i?> relBar">
+                        <div class="relHero relHero<?=$i?>">Test
+                            <?=$i?>
                         </div>
+                    </div>
                     <?php
                     }
-                    ?>     
-                </div>
+                    ?>
+            </div>
 
         </div>
     </div>
     <div class="ratingContainer">
-        <div class="rating">
-            <span>kills</span>
-            <div class="lacet"></div>
-            <div class="bubble"></div>
-            
+        <h1 class="col-lg-offset-2">MOVIE RATING</h1>
+        <h2 class="col-lg-offset-1">Phase 1</h2>
+
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Iron Man</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
         </div>
+<<<<<<< HEAD
         
         
     </div>
@@ -68,3 +74,38 @@
 <script>
     homeAnimation()
 </script>
+=======
+
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">The terrible Hulk</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubbleGreen col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Iron Man 2</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Thor</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Captain america: The first Avengers</div>
+            <div class="lacetBlue col-lg-offset-2"></div>
+            <div class="bubbleBlue col-lg-offset-8"></div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+</section>
+>>>>>>> section film
