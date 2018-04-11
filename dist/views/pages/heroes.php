@@ -29,8 +29,17 @@
             <h4 class="description col-lg-7">lorem</h4>
             <p class="descriptonText col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sit, animi unde a atque nemo similique suscipit sapiente vero ullam ducimus sed, ut magni, tempore repudiandae assumenda magnam perspiciatis dolores.</p>
         </div>
+        <div class="info-1 col-lg-offset-1  col-lg-6 ">
+            <span class=" col-lg-12">lorem</span>
+            <span class=" col-lg-12">lorem</span>
+            <span class=" col-lg-12">lorem</span>
+            <span class=" col-lg-12">lorem</span>
+            <span class=" col-lg-12">lorem</span>
+            <span class=" col-lg-12">lorem</span>
+        </div>
 
     </article>
+
 
 
 </section>

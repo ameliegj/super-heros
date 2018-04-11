@@ -13,7 +13,7 @@
     }
 
     form {
-        margin-top: 50px;
+        margin-top: 80px;
 
         .form-1 {
             border: solid;
@@ -23,6 +23,7 @@
             transform: skewX(-30deg);
 
             input {
+                color: black;
                 transform: skewX(30deg);
             }
 
@@ -52,10 +53,12 @@
         .heroName {
             margin-top: 80px;
             padding: 0;
+            font-weight: 1000;
         }
         .heroUnderName {
 
             padding: 0;
+            font-weight: 200;
         }
         .heroPictures {
 
@@ -69,9 +72,19 @@
         .description {
             margin-top: 40px;
             padding: 0;
+            font-weight: bold;
+
         }
         .descriptonText {
             padding: 0;
+            font-weight: 200;
+        }
+        .info-1 {
+            padding: 0px;
+            span {
+
+                margin: 20px 0px 0px 0px;
+            }
         }
     }
 }
