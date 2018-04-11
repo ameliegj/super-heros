@@ -37,3 +37,10 @@
 
 
 </section>
+<section class="loaderContainer">
+    <div class="loaderZone">
+        <img class="roll"src="assets/img/loader.png" alt="loader">
+        <img class="avg" src="assets/img/avengersLogo.png" alt="loader">
+    </div>
+    
+</section>

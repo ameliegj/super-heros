@@ -41,6 +41,7 @@
     
     // Includes
     include 'views/partials/head.php';
+    include 'views/partials/header.php';
     include 'views/pages/'.$page.'.php';
     include 'views/partials/foot.php';
 
