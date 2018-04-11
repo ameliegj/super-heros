@@ -12,31 +12,34 @@
         }
     }
 
+    form {
+        margin-top: 50px;
 
-    .form-1 {
-        border: solid;
-        border-color: white;
-        margin-top: 40px;
-        background-color: white;
-        transform: skewX(-30deg);
+        .form-1 {
+            border: solid;
+            border-color: white;
+            margin-top: 40px;
+            background-color: white;
+            transform: skewX(-30deg);
 
-        input {
-            transform: skewX(30deg);
+            input {
+                transform: skewX(30deg);
+            }
+
+
         }
-
-
-    }
-    .form-2 {
-        border: solid;
-        border-color: red;
-        background-color: red;
-        margin-top: 40px;
-        transform: skewX(-30deg);
-        input {
-            transform: skewX(30deg);
-        }
-        select {
-            transform: skewX(30deg);
+        .form-2 {
+            border: solid;
+            border-color: red;
+            background-color: red;
+            margin-top: 40px;
+            transform: skewX(-30deg);
+            input {
+                transform: skewX(30deg);
+            }
+            select {
+                transform: skewX(30deg);
+            }
         }
     }
 
@@ -72,34 +75,36 @@
         }
     }
 }
-.loaderContainer{
+
+.loaderContainer {
     position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: 2;
     top: 0;
     background: rgba($color: #000000, $alpha: 0.8);
-    .loaderZone{
-        height:400px;
-        width:400px;
+    display: none;
+    .loaderZone {
+        height: 400px;
+        width: 400px;
         position: absolute;
         top: calc(50% - 200px);
         text-align: center;
         left: calc(50% - 200px);
-        .avg{
+        .avg {
             position: absolute;
-            left:-10px;
-            top:60px;
+            left: -10px;
+            top: 60px;
             transform: scale(1.5)
         }
-        .roll{
-            animation: loaderRoll 10s linear infinite; 
+        .roll {
+            animation: loaderRoll 10s linear infinite;
             position: absolute;
-            top:30px;
-            left:calc(50% - 77px);
-            top:calc(50% - 77px)
+            top: 30px;
+            left: calc(50% - 77px);
+            top: calc(50% - 77px)
         }
     }
 
-    
+
 }

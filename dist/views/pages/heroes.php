@@ -1,5 +1,5 @@
 <section class="heroesContainer">
-    <header><a class="col-lg-offset-0 col-lg-3" href="#">HOME</a></header>
+
 
 
     <form action="#">
@@ -36,8 +36,8 @@
 </section>
 <section class="loaderContainer">
     <div class="loaderZone">
-        <img class="roll"src="assets/img/loader.png" alt="loader">
+        <img class="roll" src="assets/img/loader.png" alt="loader">
         <img class="avg" src="assets/img/avengersLogo.png" alt="loader">
     </div>
-    
+
 </section>
