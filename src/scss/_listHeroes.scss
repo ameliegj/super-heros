@@ -1,0 +1,57 @@
+.heroesContainer {
+    margin: 0;
+    background-color: black;
+    height: 1800px;
+    font-family: 'Lato';
+
+    .tab {
+        padding: 0px;
+        table {
+            padding-top: 100px;
+            padding: 0px;
+            tr {
+                display: block;
+                margin-top: 0px;
+                padding: 0px;
+
+
+
+                th {
+                    padding-right: 40px;
+                    font-size: 20px;
+
+                    .heroesPictures {
+                        padding-top: 10px;
+                        padding-left: 0px;
+                        width: 100px;
+                        height: 100px;
+                        background-color: white;
+                        border-radius: 50px;
+                    }
+                    .heroesPicturesOpacity {
+                        width: 100px;
+                        height: 100px;
+                        background-color: white;
+                        opacity: 0;
+                        padding-left: 0px;
+
+                    }
+                }
+            }
+            .on {
+                margin-top: 100px;
+            }
+            .under {
+                padding-left: 0px;
+                display: block;
+                margin-bottom: 80px;
+                border-bottom: solid;
+                border-color: white;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+
+
+}

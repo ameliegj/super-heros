@@ -54,10 +54,64 @@
 
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    <div class="ratingContainer">
+        <h1 class="col-lg-offset-2">MOVIE RATING</h1>
+        <h2 class="col-lg-offset-1">Phase 1</h2>
+
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Iron Man</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
+        </div>
+        
+        
+    </div>
+
+>>>>>>> 19f56fb1f22b052dcf019ad9754d84d978ae3c3f
     
 </section>
 
 <script src="assets/js/main.min.js"> </script>
 <script>
     homeAnimation()
+<<<<<<< HEAD
 </script>
+=======
+</script>
+
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">The terrible Hulk</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubbleGreen col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Iron Man 2</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Thor</div>
+            <div class="lacet col-lg-offset-2"></div>
+            <div class="bubble col-lg-offset-8"></div>
+
+        </div>
+        <div class="rating col-lg-offset-2">
+            <div class="col-lg-offset-1">Captain america: The first Avengers</div>
+            <div class="lacetBlue col-lg-offset-2"></div>
+            <div class="bubbleBlue col-lg-offset-8"></div>
+
+        </div>
+
+
+
+
+
+
+
+</section>
+>>>>>>> 19f56fb1f22b052dcf019ad9754d84d978ae3c3f

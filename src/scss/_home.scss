@@ -8,7 +8,7 @@
         background-size: 100%;
         .introLaunding {
             text-transform: uppercase;
-            color: white;
+            color: $white;
             width: 700px;
             margin-left: calc(50% - 350px);
             text-align: center;
@@ -22,7 +22,7 @@
         .discoverLaunding {
             width: 152px;
             text-align: center;
-            color: white;
+            color: $white;
             position: absolute;
             bottom: 20px;
             left: calc(50% - 76px);
@@ -35,10 +35,10 @@
             }
         }
     }
-    .gauntletContainer {
-        height: 630px;
-        background: black;
-        .gauntletIntro {
+    .gauntletContainer{
+        height:630px;
+        background: #111111;
+        .gauntletIntro{
             width: 66.66%;
             padding-left: 33.33%;
             padding-top: 90px;
@@ -58,11 +58,10 @@
             }
         }
     }
-    .wheelContainer {
-        height: 630px;
-        background: black;
-        .sideWheel {}
-        .midWheel {
+    .wheelContainer{
+        height:630px;
+        background: $black;
+        .midWheel{
             position: relative;
             .infoCadre {
                 font-size: 25px;
@@ -142,18 +141,17 @@
                 }
                 .bar {
                     background: white;
+                .bar{
+                    background: $white;
                     position: absolute;
                     will-change: transform;
                     width: 2px;
                     height: 40px;
                     transform-origin: 0;
-
                 }
-
-
-
             }
         }
+    }
     }
     .relationContainer {
         height: 300px;
@@ -164,7 +162,7 @@
             margin-left: calc(50% - 600Px);
             border: solid white 1px;
             .relationWheel {
-                .relBar {}
+                
                 .relHero {
                     position: absolute;
                 }
@@ -172,6 +170,257 @@
 
         }
     }
-    
+    .ratingContainer {
+        margin-top: 300px;
+        .rating {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            
+            .lacet {
+                margin: -10px 0px 0px 220px;
+                background-color: white;
+                width: 52%;
+                height: 2px;
+                animation-name: lacetRize;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                transform-origin: 0% 50%;
+                @keyframes lacetRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+            }
+            .lacetBlue {
+                margin: -10px 0px 0px 330px;
+                background-color: white;
+                width: 45%;
+                height: 2px;
+                animation-name: lacetRize;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                transform-origin: 0% 50%;
+                @keyframes lacetRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+            }
+            .bubble {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: red;
+                border-radius: 50px;
+                background-color: $marvel;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+            .bubbleGreen {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: greenyellow;
+                border-radius: 50px;
+                background-color: greenyellow;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+            .bubbleBlue {
+                width: 100px;
+                height: 100px;
+                border: solid;
+                border-color: skyblue;
+                border-radius: 50px;
+                background-color: skyblue;
+                margin-top: -50px;
+                transform-origin: 50% 50%;
+                animation-name: bubbleRize;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                transform: scale(0, 0);
+                animation-fill-mode: forwards;
+
+                @keyframes bubbleRize {
+
+                    0% {
+                        transform: scale(0, 0);
+
+
+                    }
+                    100% {
+                        transform: scale(1, 1);
+
+
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+
+
+
+
+
+
+//     .relationContainer{
+//         height:300px;
+//         border-top:1px white solid;
+//         .relationBack{
+//             width: 1200px;
+//             height: 650px;
+//             margin-left: calc(50% - 600Px);
+//             border: solid white 1px;
+//             position: relative;
+//             .relationWheel{
+//                 position: absolute;
+//                 top:50%;
+//                 .relBar{
+
+//                 }
+//                 .relHero{
+//                     position: absolute;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+
+.relationContainer {
+    border-top:1px $white solid;
+
+    .relationshipGraph {
+        width: 700px;
+        height: 700px;
+        position: relative;
+        // background-color: grey;
+    }
+    .relationshipGraph>div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // background-color: grey;
+        // transform: translateX(50%) translateY(50%);
+        .item {
+            position: absolute;
+            .name {
+                text-align:right;
+                width: 150px;
+                position: absolute;
+                font-family: avenir;
+                font-weight: 100;
+            }
+        }
+
+
+
+    }
+
 
 }
+
+.curve {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+}
+
+
+.anim {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: draw 2s forwards;
+}
+
+.animOut {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: drawReversed 1s forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 400;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawReversed {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 400;
+    }
+}
+
+
+} //close homecontainer

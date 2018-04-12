@@ -27,8 +27,14 @@
         case 'amelie':
             $page = "amelie";
             break;
+        case 'ameliebis':
+            $page = "ameliebis";
+            break;
         case 'amelie2':
             $page = "amelie2";
+            break;
+        case 'listHeroes':
+            $page = "listHeroes";
             break;
         default:
             $page='404';
