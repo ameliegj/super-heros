@@ -269,6 +269,7 @@
             .diagramContainer{
                 position: relative;
                 height: 100%;
+                text-align: center;
                 .portrait{
                     border-radius: 100%;
                     background-color: white;
@@ -284,6 +285,13 @@
                     width: 86px;
                     height: 86px;
                     
+                }
+                h5{
+                    font-weight: bold;
+                    font-size: 25px;
+                    position: absolute;
+                    top:-100px;
+                    left:calc(50% - 40px)
                 }
                 .alliesPortraitContainer{
                     width: 33%;

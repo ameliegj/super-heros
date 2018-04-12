@@ -96,6 +96,7 @@
         <div class="relationBack">
                     <div class="diagramContainer">
                         <div class="alliesPortraitContainer">
+                            <h5>Friends</h5>
                             <div class="alliesPortrait1 sidePortrait portrait"></div>
                             <div class="alliesPortrait2 sidePortrait portrait"></div>
                             <div class="alliesPortrait3 sidePortrait portrait"></div>
@@ -106,6 +107,7 @@
                             </div>
                         </div>
                         <div class="vilainsPortraitContainer">
+                            <h5>Ennemies</h5>
                             <div class="vilainsPortrait1 sidePortrait portrait"></div>
                             <div class="vilainsPortrait2 sidePortrait portrait"></div>
                             <div class="vilainsPortrait3 sidePortrait portrait"></div>
