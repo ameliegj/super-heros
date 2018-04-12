@@ -10,7 +10,7 @@
             <div class="linkZone">
                 <a href="/">Home</a>
                 <a href="/heroes">Heroes</a>
-                <a href="/films">Films</a>
+                <a href="/movie">Films</a>
                 <a href="http://marvel.com/">Official website</a>
                 
             </div>

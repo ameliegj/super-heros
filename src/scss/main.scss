@@ -20,6 +20,13 @@ body {
         font-size: 30px;
         color: $white;
     }
+
+    .grdUnder{
+        width:0px;
+        margin-top: 10px;
+        height:3px;
+        background:linear-gradient(to right,#800000,#490202);
+    }
     background-color: $black
 }
 

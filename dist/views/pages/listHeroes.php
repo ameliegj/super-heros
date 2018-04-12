@@ -1,6 +1,6 @@
 <section class="heroesContainer">
     <div class="tab col-sm-8 col-sm-offset-1 col-xs-12  ">
-    <h1>Heroes List</h1>
+    <h1>Heroes List <div class="grdUnder"></div></h1>
     <table>
         <?php
         for($i=1;$i<37;$i++){
