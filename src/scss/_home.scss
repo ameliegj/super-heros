@@ -35,10 +35,10 @@
             }
         }
     }
-    .gauntletContainer{
-        height:630px;
+    .gauntletContainer {
+        height: 630px;
         background: #111111;
-        .gauntletIntro{
+        .gauntletIntro {
             width: 66.66%;
             padding-left: 33.33%;
             padding-top: 90px;
@@ -58,10 +58,10 @@
             }
         }
     }
-    .wheelContainer{
-        height:630px;
+    .wheelContainer {
+        height: 630px;
         background: $black;
-        .midWheel{
+        .midWheel {
             position: relative;
             .infoCadre {
                 font-size: 25px;
@@ -139,7 +139,7 @@
                     left: 50%;
                     top: 150px;
                 }
-                .bar{
+                .bar {
                     background: $white;
                     position: absolute;
                     will-change: transform;
@@ -156,7 +156,7 @@
         .rating {
             margin-bottom: 50px;
             margin-top: 50px;
-            
+
             .lacet {
                 margin: -10px 0px 0px 220px;
                 background-color: white;
@@ -282,24 +282,22 @@
     }
 
     .relationContainer {
-        border-top:1px $white solid;
+        border-top: 1px $white solid;
 
         .relationshipGraph {
             width: 700px;
             height: 700px;
-            position: relative;
-            // background-color: grey;
+            position: relative; // background-color: grey;
         }
-        .relationshipGraph>div {
+        .relationshipGraph > div {
             position: absolute;
             top: 50%;
-            left: 50%;
-            // background-color: grey;
+            left: 50%; // background-color: grey;
             // transform: translateX(50%) translateY(50%);
             .item {
                 position: absolute;
                 .name {
-                    text-align:right;
+                    text-align: right;
                     width: 150px;
                     position: absolute;
                     font-family: avenir;
@@ -312,20 +310,20 @@
             stroke-dasharray: 400;
             stroke-dashoffset: 400;
         }
-        
-        
+
+
         .anim {
             stroke-dasharray: 400;
             stroke-dashoffset: 400;
             animation: draw 2s cubic-bezier(0.245, 0.005, 0.350, 1.005) forwards;
         }
-        
+
         .animOut {
             stroke-dasharray: 400;
             stroke-dashoffset: 0;
             animation: drawReversed 1s forwards;
         }
-        
+
         @keyframes draw {
             from {
                 stroke-dashoffset: 400;
@@ -334,7 +332,7 @@
                 stroke-dashoffset: 0;
             }
         }
-        
+
         @keyframes drawReversed {
             from {
                 stroke-dashoffset: 0;
@@ -343,8 +341,40 @@
                 stroke-dashoffset: 400;
             }
         }
-        
+
     }
+    .spiderContainer {
+        margin-top: 300px;
+        img {}
+        div {
+            h1 {}
+            p {
+                font-size: 20px;
+            }
+        }
+        .button {
+            color: white;
+            border: solid;
+            border-color: red;
+            margin-top: 40px;
+            background-color: red;
+            transform: skewX(-30deg);
+            width: 140px;
+            height: 30px;
+
+            div {
+                transform: skewX(30deg);
+                a {
+
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+
 
 
 

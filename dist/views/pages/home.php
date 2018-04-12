@@ -39,29 +39,28 @@
     <div class="relationContainer container">
         <?php include 'views/actions/relationshipGraph.php'; ?>
 
-            <div class="row">
-                <h1>TAKE A LOOK AT THOSE RELATIONS</h1>
-            </div>
-            <div class="row">
-                <div class="relationshipGraph col-sm-10 col-md-8">
-                    <div>
-                        <?php 
+        <div class="row">
+            <h1>TAKE A LOOK AT THOSE RELATIONS</h1>
+        </div>
+        <div class="row">
+            <div class="relationshipGraph col-sm-10 col-md-8">
+                <div>
+                    <?php 
                             $i =0;
                             foreach($data->results->characters as $_result): 
                         ?>
-                                <div class="item item<?=$i?>">
-                                    <div class="name name<?=$i?> id<?=$_result->id?>">
-                                        <?= $_result->name ?>
-                                    </div>
-                                </div>
-                        <?php 
+                    <div class="item item<?=$i?>">
+                        <div class="name name<?=$i?> id<?=$_result->id?>">
+                            <?= $_result->name ?>
+                        </div>
+                    </div>
+                    <?php 
                             $i++; 
                             endforeach; 
-                        ?> 
-                    </div>
-                    <!-- CURVES -->
-                    <svg width="320" height="320" 
-                        style="
+                        ?>
+                </div>
+                <!-- CURVES -->
+                <svg width="320" height="320" style="
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -84,16 +83,42 @@
                             <?php endforeach;?>
                         <?php $i++; endforeach; ?>
                     </svg>
-                </div>
             </div>
+        </div>
+    </div>
+    <div class="spiderContainer col-sm-offset-1  col-sm-11 ">
+        <img class="col-sm-3" src="../../assets/img/Spider.png" alt="spider-man">
+        <div class="col-sm-offset-1 col-sm-5">
+            <h1>HEY! LIKE WHAT YOU SEE...</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam architecto aliquam alias sapiente dicta voluptatem cupiditate repudiandae blanditiis, delectus quisquam iusto ducimus laboriosam officiis cumque, atque, repellat laudantium. Dignissimos, ullam.</p>
+        </div>
+        <div class="button col-sm-offset-4 col-sm-10">
+            <div> <a href="#">SEE MORE</a></div>
+        </div>
+
+    </div>
+    <div class="spiderContainer col-sm-offset-1  col-sm-11  ">
+        <img class="col-sm-3" src="../../assets/img/MARVEL-LEGENDS-SERIES-INFINITY-GAUNTLET-oop-2.png" alt="spider-man">
+        <div class="col-sm-offset-1 col-sm-5">
+            <h1>WILL YOU READY FOR THE BIG FIGHT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam architecto aliquam alias sapiente dicta voluptatem cupiditate repudiandae blanditiis, delectus quisquam iusto ducimus laboriosam officiis cumque, atque, repellat laudantium. Dignissimos, ullam.</p>
+        </div>
+        <div class="button col-sm-offset-4 col-sm-10">
+            <div><a href="#">BUY TICKET</a></div>
+
+        </div>
+
     </div>
 
-    
 
-    
+
 </section>
 
-<script src="assets/js/main.min.js"> </script>
+<script src="assets/js/main.min.js">
+
+
+</script>
 <script>
     homeAnimation()
+
 </script>
