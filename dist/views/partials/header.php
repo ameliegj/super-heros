@@ -8,11 +8,11 @@
                 <img src="../assets/img/marvelLogo.png" alt="Marvel">
             </div>
             <div class="linkZone">
-                <a href="">Home</a>
-                <a href="">Latest news</a>
-                <a href="">Movies</a>
-                <a href="">Comics</a>
-                <a href="">Heroes</a>
+                <a href="/">Home</a>
+                <a href="/heroes">Heroes</a>
+                <a href="/films">Films</a>
+                <a href="http://marvel.com/">Official website</a>
+                
             </div>
         </div>
         

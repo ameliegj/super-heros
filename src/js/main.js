@@ -97,26 +97,7 @@ const homeAnimation = () =>{
     }
     swicthDonuts()
 
-    // Relation wheel
-
-    // const runRelation = () => {
-    //     for(let i=1; i<=37;i++){
-    //         let currentRel=document.querySelector(".relHero"+i);
-    //         let currentContRel=document.querySelector(".relBar"+i);
-    //         let currentAngle= i * - 9
-    //         if (i > 10){
-    //             currentRel.style.transform="rotate(-180deg)"
-                
-                
-    //         }    
-        
-    //         currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) ";
-            
-    //     }    
-    // } 
-    // runRelation()
-
-// RELATIONSHIP GRAPH :
+    
 let $items = document.querySelectorAll('.item');
 let arrayAngles = []
 
@@ -131,25 +112,12 @@ for( let i=0; i < $items.length; i++ ) {
     item.style.transform="rotate("+angle+"deg) translateX(-300px) "
     arrayAngles.push(360+angle)
 }
-console.log(arrayAngles)
-
-// for(let i=1; i<=37;i++)
-// {
-//     let currentRel=document.querySelector(".relHero"+i);
-//     let currentContRel=document.querySelector(".relBar"+i);
-//     let currentAngle= i * - 9
-//     if (i > 10)
-//     {
-//         currentRel.style.transform="rotate(-180deg)"  
-//     }  
-//     currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) "
-// }  
 
 let $label = document.querySelectorAll('.name')
 
 
 for(let i=0; i<$label.length; i++)
-{
+    {
     $label[i].addEventListener('mouseenter', () => 
     {
         console.log('hover')
@@ -170,15 +138,7 @@ for(let i=0; i<$label.length; i++)
         }
     })
 
-    // $label[i].addEventListener('mouseover', () => 
-    // {
-    //     // console.log('out');
-    //     let $curves = document.querySelectorAll('.curve'+i)
-    //     for(let j=0; j<$curves.length; j++)
-    //     {
-    //         $curves[j].setAttribute('animation-play-state', 'paused')
-    //     }
-    // })
+    
 
     $label[i].addEventListener('mouseout', () => 
     {

@@ -1,70 +1,49 @@
 <section class="heroesContainer">
-    <!--
-    <form action="#">
-        <div class="form-1 col-lg-offset-1 col-lg-1">
-            <input type="text">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <input type="submit">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <select name='hero'> 
-            <optgroup>
-                <option class="Thor" value="bob">Thor </option>
-                <option value="bo">bo</option>
-            </optgroup>
+    <div class="tab col-sm-8 col-sm-offset-1 col-xs-12  ">
+    <h1>Heroes List</h1>
+    <table>
+        <?php
+        for($i=1;$i<37;$i++){
+            ?>        
+                <tr class="on">
+                    <th>
+                        <a href="heroes/id">
+                            <div class="heroesPicturesOpacity"></div>
+                        </a>
+                    </th>
+                    <th class="thTitle">Drax the Destroyer</th>
+                    <th>Thor</th>
+                    <th>Thor : Dark worldt</th>
+                    <th class="name1">Thor : Ragnarok</th>
+                    <th class="spent1">First appearance : 2011</th>
+                </tr>
+                <tr class="under">
+                    <th class='thImage'>
+                        <div class="heroesPictures"></div>
+                    </th>
+                    <th class="thTitle">Lord of thunder</th>
+                    
+                </tr>
             
-            </select>
-
-
-        </div>
-
-    </form>
--->
-    <div class="tab col-lg-offset-1  ">
-
-        <table>
-            <tr class="on">
-                <th>
-                    <div class="heroesPicturesOpacity"></div>
-                </th>
-                <th>Thor Odinson</th>
-                <th>Thor</th>
-                <th>Thor : Dark worldt</th>
-                <th class="name1">Thor : Ragnarok</th>
-                <th class="spent1">First appearance : 2011</th>
-
-            </tr>
-            <tr class="under">
-                <th>
-                    <div class="heroesPictures"></div>
-                </th>
-                <th>Lord of thunder</th>
-            </tr>
-
-            <tr class="on">
-                <th>
-                    <div class="heroesPicturesOpacity"></div>
-                </th>
-                <th>Thor Odinson</th>
-                <th>Thor</th>
-                <th>Thor : Dark worldt</th>
-                <th class="name1">Thor : Ragnarok</th>
-                <th class="spent1">First appearance : 2011</th>
-
-            </tr>
-            <tr class="under">
-                <th>
-                    <div class="heroesPictures"></div>
-                </th>
-                <th>Lord of thunder</th>
-            </tr>
-
-
-
-
-
+        <?php
+            }
+        ?>
         </table>
+        
+        
     </div>
-
+    <div class="col-sm-3 filterPanel">
+        <img src="../../assets/img/avengersMarvel.png" alt="Avengers">
+        <div class="filterBack">
+            <div class="filterContent">
+                
+                <h5>Filters:</h5>
+                <span><div class="filterCircle"></div> Name</span>
+                <span><div class="filterCircle"></div> Faction</span>
+                <span><div class="filterCircle"></div> First appearance</span>
+                
+            </div>
+            
+        </div>
+    </div>
 </section>

@@ -33,7 +33,7 @@
         case 'amelie2':
             $page = "amelie2";
             break;
-        case 'listHeroes':
+        case 'heroes':
             $page = "listHeroes";
             break;
         default:
@@ -47,17 +47,28 @@
 
 
     if (strpos($curUrl, 'heroes/') !== false) {
-        if(strpos($curUrl, 'localhost') !== false){
-            $heroes=substr($curUrl,24);//Local
-            
+        if(strlen($curUrl) > 16){
+            ChromePhp::log("A");
+            if(strpos($curUrl, 'localhost') !== false){
+                $heroes=substr($curUrl,24);//Local
+            }
+            else{
+                // $heroes=substr($curUrl,27);//Online
+            }
+            include 'views/partials/head.php';
+            include 'views/partials/header.php';
+            include 'views/pages/heroes.php';
+            include 'views/partials/foot.php';
         }
-        else{
-            // $heroes=substr($curUrl,27);//Online
+        else {
+            ChromePhp::log($page);
+            include 'views/partials/head.php';
+            include 'views/partials/header.php';
+            include 'views/pages/'.$page.'.php';
+            include 'views/partials/foot.php';
+    
         }
-        include 'views/partials/head.php';
-        include 'views/partials/header.php';
-        include 'views/pages/heroes.php';
-        include 'views/partials/foot.php';
+
     }
 
     else if($page == '404'){
@@ -67,6 +78,7 @@
     }
 
     else{
+        ChromePhp::log($page);
         include 'views/partials/head.php';
         include 'views/partials/header.php';
         include 'views/pages/'.$page.'.php';

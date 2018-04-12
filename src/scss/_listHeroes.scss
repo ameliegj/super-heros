@@ -1,10 +1,15 @@
 .heroesContainer {
     margin: 0;
     background-color: black;
-    height: 1800px;
-    font-family: 'Lato';
+    height: 3200px;
+    font-family: 'Lato'; 
+    position: relative;
+    h1{
+        font-weight: Bold;
+    }
 
-    .tab {
+    .tab{
+        margin-top:200px;
         padding: 0px;
         table {
             padding-top: 100px;
@@ -19,10 +24,11 @@
                 th {
                     padding-right: 40px;
                     font-size: 20px;
+                    font-weight: bold;
 
                     .heroesPictures {
                         padding-top: 10px;
-                        padding-left: 0px;
+                        padding-left: 40px;
                         width: 100px;
                         height: 100px;
                         background-color: white;
@@ -37,18 +43,79 @@
 
                     }
                 }
+
+                .thImage{
+                    
+                }
+                .thTitle{
+                    
+                    width:200px;
+                    font-weight: Bold;
+                    
+                }
             }
             .on {
-                margin-top: 100px;
+                
+                th{
+                    margin-top:200px;
+                }
             }
             .under {
                 padding-left: 0px;
-                display: block;
+                display: inline-block;
                 margin-bottom: 80px;
-                border-bottom: solid;
+                border-bottom: solid 1px;
                 border-color: white;
                 padding-bottom: 20px;
+                padding-top:-200px;
+                width: 100%;
+                th{
+                    vertical-align: middle;
+                    font-weight: bold;
+                }
             }
+        }
+    }
+    .filterPanel{
+        img{
+            display: block;
+            height:100px;
+            position: fixed;
+            top:150px;
+        }
+        .filterBack{
+            position: fixed;
+            width:330px;
+            height: 188px;
+            background:#282828;
+            top:300px;
+            font-weight: bold;
+            .filterContent{
+                width:calc(100% - 80px );
+                padding:0px 40px;
+                font-weight: bold;
+                font-size: 18px;
+                h5{
+                    font-size: 18px;
+                    margin-bottom:20px;
+                }
+                span{
+                    width: 100%;
+                    display: block;
+                    padding-top:8px;
+                    .filterCircle{
+                        width:12px;
+                        height:12px;
+                        background: $white;
+                        border-radius: 100%;
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+                }
+
+            }
+            
+
         }
     }
 
