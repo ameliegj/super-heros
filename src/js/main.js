@@ -24,31 +24,36 @@ const homeAnimation = () =>{
         skewLink.classList.add("linkSFlat1")
         skewLink.classList.add("linkR")
         let parentCadre;
+        let rdnNb;
         switch(number){
             case "1" :
             flatLink.classList.add("linkRFlat")
             infoCadre.classList.add("infoCadre1")
             parentCadre=document.querySelector(".bar23")
             infoCadre.style.transform="rotate(-115deg) translateY(-300px)"
-            pCadre.innerHTML="32.500 comics sont paru depuis la création";
+            rdnNb=5;
             break;
             case "2":
             flatLink.classList.add("linkRFlat2")
             infoCadre.classList.add("infoCadre2")
             parentCadre=document.querySelector(".bar60")
             infoCadre.style.transform="rotate(-300deg) translateY(-300px)"
-            pCadre.innerHTML="Test2";
+            rdnNb=1
             break;
             case "3":
             flatLink.classList.add("linkRFlat3")
             infoCadre.classList.add("infoCadre3")
             parentCadre=document.querySelector(".bar10")
             infoCadre.style.transform="rotate(-50deg) translateY(-300px)"
-            pCadre.innerHTML="Test3";
+            rdnNb=2;
             break;
             
 
         }
+        // let rdnNb=Math.floor(Math.random() * 11);
+        let randomText=document.querySelector(".randomQuote"+rdnNb).innerHTML;
+        
+        pCadre.innerHTML=randomText;
         parentCadre.appendChild(infoCadre)
         infoCadre.appendChild(pCadre)
         infoCadre.appendChild(flatLink)
@@ -92,9 +97,12 @@ const homeAnimation = () =>{
             
         },6000)
 
-        // if(k==3){
-        //     setTimeout(swicthDonuts(),6000)
-        // }
+        if(k==3){
+            parentCadre.removeElement(infoCadre)
+            infoCadre.removeElement(pCadre)
+            infoCadre.removeElement(flatLink)
+            setTimeout(swicthDonuts(),6000)
+        }
     }
     swicthDonuts()
 
@@ -121,7 +129,7 @@ for(let i=0; i<$label.length; i++)
     {
     $label[i].addEventListener('mouseenter', () => 
     {
-        console.log('hover')
+        
         $label[i].style.fontWeight='900'
         let $dot = document.querySelector('.dot'+i)
         $dot.setAttribute("r", 4);
@@ -143,7 +151,7 @@ for(let i=0; i<$label.length; i++)
 
     $label[i].addEventListener('mouseout', () => 
     {
-        console.log('out')
+        
         $label[i].style.fontWeight='100'
         let $dot = document.querySelector('.dot'+i)
         $dot.style.fill='white'
