@@ -64,17 +64,15 @@
             <div class="bubble col-lg-offset-8"></div>
 
         </div>
-<<<<<<< HEAD
         
         
     </div>
-</section>
+
     
 <script src="assets/js/main.min.js"> </script>
 <script>
     homeAnimation()
 </script>
-=======
 
         <div class="rating col-lg-offset-2">
             <div class="col-lg-offset-1">The terrible Hulk</div>
@@ -106,6 +104,5 @@
 
 
 
-    </div>
+
 </section>
->>>>>>> section film
