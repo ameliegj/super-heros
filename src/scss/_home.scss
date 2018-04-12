@@ -322,7 +322,7 @@
         
         .animOut {
             stroke-dasharray: 400;
-            stroke-dashoffset: 400;
+            stroke-dashoffset: 0;
             animation: drawReversed 1s forwards;
         }
         
