@@ -40,6 +40,9 @@
         case 'listHeroes':
             $page = "listHeroes";
             break;
+        case 'movie':
+            $page = "movie";
+            break;
         default:
             $page='404';
             break;
