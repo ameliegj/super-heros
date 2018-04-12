@@ -20,7 +20,6 @@
             opacity: 0.2;
         }
         .background1{
-            
             right: -150px;
             top:300px;
             img{
@@ -28,6 +27,24 @@
             }
             
         }
+        .background2{
+            left: -752px;
+            top:1400px;
+            img{
+                height:440px;
+                transform: rotate(90deg)
+            }
+            
+        }
+        .background3{
+            right: -300px;
+            top:2000px;
+            img{
+                height:969px;
+            }
+            
+        }
+        
     }
 
     form {

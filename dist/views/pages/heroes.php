@@ -4,6 +4,13 @@
         <div class="background background1">
             <img src="../../assets/img/Gant.png" alt="Thanos">
         </div>
+        <div class="background background2">
+            <img src="../../assets/img/Arc.png" alt="Arc">
+        </div>
+        <div class="background background3">
+            <img src="../../assets/img/casque.png" alt="Casque">
+        </div>
+        
     </div>
     <div class="nameBar"></div>
     <article class="col-lg-10 col-lg-offset-1">
