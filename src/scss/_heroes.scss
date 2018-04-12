@@ -78,6 +78,7 @@
         }
         .infoContainer{
             margin-top: 30px;
+            height:2000px;
             .pictureContainer{
                 position: relative;
                 .animRound{
@@ -167,6 +168,7 @@
             
             }
             .appearanceBack{
+                height: 900px;
                 h4{
                     margin-top: 40px;
                     padding: 0;
@@ -250,8 +252,97 @@
                     }
                 }
             }
-            .skinBack{
-                
+            .totalBack{
+                height:100px;   
+                h4{
+                    font-weight: 300;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+        .relationBack{
+            height: 500px; 
+            width: 100%; 
+            
+            .diagramContainer{
+                position: relative;
+                height: 100%;
+                .portrait{
+                    border-radius: 100%;
+                    background-color: white;
+                    position: absolute;
+                }
+                .mainPortrait{
+                    width: 160px;
+                    height: 160px;
+                    left: calc(50% - 80px);
+                    top: calc(50% - 80px);
+                }
+                .sidePortrait{
+                    width: 86px;
+                    height: 86px;
+                    
+                }
+                .alliesPortraitContainer{
+                    width: 33%;
+                    height: 100%;
+                    position: absolute;
+                    
+                    .alliesPortrait1{
+                        top:0;
+                        right: 10%;
+                        animation: relationsMove1 12s infinite ease-in-out forwards ;
+                    }
+                    .alliesPortrait2{
+                        top:25%;
+                        left: 15%;
+                        animation: relationsMove2 10s infinite ease-in-out forwards ;
+                    }
+                    .alliesPortrait3{
+                        top:50%;
+                        right: 15%;
+                        animation: relationsMove3 9s infinite ease-in-out forwards ;
+                    }
+                    .alliesPortrait4{
+                        top:75%;
+                        left: 20%;
+                        animation: relationsMove4 10s infinite ease-in-out forwards ;
+                    }
+                    
+                }
+                .vilainsPortraitContainer{
+                    width: 33%;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top:0;
+                    div{
+                        right: 0;
+                    }
+                    .vilainsPortrait1{
+                        top:0;
+                        left: 10%;
+                        animation: relationsMove4 12s infinite ease-in-out forwards ;
+                    }
+                    .vilainsPortrait2{
+                        top:25%;
+                        left: 38%;
+                        animation: relationsMove3  8s infinite ease-in-out forwards ;
+                    }
+                    .vilainsPortrait3{
+                        top:50%;
+                        right: 16%;
+                        animation: relationsMove2 7s infinite ease-in-out forwards ;
+                    }
+                    .vilainsPortrait4{
+                        top:75%;
+                        left: 16%;
+                        animation: relationsMove1 10s infinite ease-in-out forwards ;
+                    }
+                    
+                }
             }
         }
         .backPhotoContainer{

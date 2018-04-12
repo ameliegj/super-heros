@@ -14,11 +14,12 @@
             </optgroup>
             
             </select>
-            <i class="fa fa-chevron-down">
+            
 
         </div>
 
     </form>
+    
     <div class="nameBar"></div>
     <article class="col-lg-10 col-lg-offset-1">
         <div class="row">
@@ -86,12 +87,33 @@
                     
                     
                 </div>
-                <div class="skinBack">
-                    
+                <div class="totalBack">
+                    <h4>Total number of appearances</h4>
                 </div>
+                
             </div>
         </div>
-        <div class="backPhotoContainer"></div>
+        <div class="relationBack">
+                    <div class="diagramContainer">
+                        <div class="alliesPortraitContainer">
+                            <div class="alliesPortrait1 sidePortrait portrait"></div>
+                            <div class="alliesPortrait2 sidePortrait portrait"></div>
+                            <div class="alliesPortrait3 sidePortrait portrait"></div>
+                            <div class="alliesPortrait4 sidePortrait portrait"></div>
+                        </div>
+                        <div class="mainPortraitContainer">
+                            <div class="mainPortrait portrait">
+                            </div>
+                        </div>
+                        <div class="vilainsPortraitContainer">
+                            <div class="vilainsPortrait1 sidePortrait portrait"></div>
+                            <div class="vilainsPortrait2 sidePortrait portrait"></div>
+                            <div class="vilainsPortrait3 sidePortrait portrait"></div>
+                            <div class="vilainsPortrait4 sidePortrait portrait"></div>
+                        </div>
+                    </div>
+        </div>
+        <!-- <div class="backPhotoContainer"></div> -->
 
     </article>
 

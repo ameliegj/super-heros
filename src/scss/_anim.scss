@@ -116,3 +116,34 @@
     from{transform: rotate(0deg)}
     to{transform: rotate(360deg)}
 }
+
+
+
+@keyframes relationsMove1{
+    0%{transform: translate3d(0,0,0)}
+    25%{transform: translate3d(8px,-10px,0)}
+    50%{transform: translate3d(-9px,4px,0)}
+    75%{transform: translate3d(10px,-10px,0)}
+    100%{transform: translate3d(0px,0px,0)}
+}
+@keyframes relationsMove2{
+    0%{transform: translate3d(0,0,0)}
+    25%{transform: translate3d(-5px,-25px,0)}
+    50%{transform: translate3d(13px,2px,0)}
+    75%{transform: translate3d(-7px,-3px,0)}
+    100%{transform: translate3d(0px,0px,0)}
+}
+@keyframes relationsMove3{
+    0%{transform: translate3d(0,0,0)}
+    25%{transform: translate3d(10px,10px,0)}
+    50%{transform: translate3d(-3px,-3px,0)}
+    75%{transform: translate3d(13px,4px,0)}
+    100%{transform: translate3d(0px,0px,0)}
+}
+@keyframes relationsMove4{
+    0%{transform: translate3d(0,0,0)}
+    25%{transform: translate3d(-8px,2px,0)}
+    50%{transform: translate3d(14px,-3px,0)}
+    75%{transform: translate3d(-1px,10px,0)}
+    100%{transform: translate3d(0px,0px,0)}
+}
