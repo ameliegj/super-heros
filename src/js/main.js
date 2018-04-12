@@ -49,12 +49,12 @@ const homeAnimation = () =>{
             
 
         }
-        parentCadre.appendChild(infoCadre)
+        // parentCadre.appendChild(infoCadre)
         infoCadre.appendChild(pCadre)
         infoCadre.appendChild(flatLink)
         pCadre.style.animation="textAppear 0.4s ease-in-out forwards 0.8s"
         flatLink.style.animation="lineAppear 0.4s ease-in-out forwards 0.4s"
-        parentCadre.style.animation="donutSelect 0.4s ease-in-out forwards"
+        // parentCadre.style.animation="donutSelect 0.4s ease-in-out forwards"
         
         setTimeout(function(){
             flatLink.style.opacity=1;
@@ -99,22 +99,142 @@ const homeAnimation = () =>{
 
     // Relation wheel
 
-    const runRelation = () => {
-        for(let i=1; i<=37;i++){
-            let currentRel=document.querySelector(".relHero"+i);
-            let currentContRel=document.querySelector(".relBar"+i);
-            let currentAngle= i * - 9
-            if (i > 10){
-                currentRel.style.transform="rotate(-180deg)"
+    // const runRelation = () => {
+    //     for(let i=1; i<=37;i++){
+    //         let currentRel=document.querySelector(".relHero"+i);
+    //         let currentContRel=document.querySelector(".relBar"+i);
+    //         let currentAngle= i * - 9
+    //         if (i > 10){
+    //             currentRel.style.transform="rotate(-180deg)"
                 
                 
-            }    
+    //         }    
         
-            currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) ";
+    //         currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) ";
             
-        }    
-    } 
-    runRelation()
+    //     }    
+    // } 
+    // runRelation()
+
+// RELATIONSHIP GRAPH :
+let $items = document.querySelectorAll('.item');
+let arrayAngles = []
+
+for( let i=0; i < $items.length; i++ ) {
+    let item = $items[i]
+    let angle= i * -9 
+    if (i > 10 && i<32)
+    {
+        document.querySelector('.name'+i).style.transform="rotate(-180deg)"  
+        document.querySelector('.name'+i).style.textAlign="left"
+    }
+    item.style.transform="rotate("+angle+"deg) translateX(-300px) "
+    arrayAngles.push(360+angle)
+}
+console.log(arrayAngles)
+
+// for(let i=1; i<=37;i++)
+// {
+//     let currentRel=document.querySelector(".relHero"+i);
+//     let currentContRel=document.querySelector(".relBar"+i);
+//     let currentAngle= i * - 9
+//     if (i > 10)
+//     {
+//         currentRel.style.transform="rotate(-180deg)"  
+//     }  
+//     currentContRel.style.transform="rotate("+currentAngle+"deg) translateY(100px) "
+// }  
+
+let $label = document.querySelectorAll('.name')
+
+
+for(let i=0; i<$label.length; i++)
+{
+    $label[i].addEventListener('mouseenter', () => 
+    {
+        console.log('hover')
+        $label[i].style.fontWeight='900'
+        let $dot = document.querySelector('.dot'+i)
+        $dot.setAttribute("r", 4);
+        $label[i].style.transition = "all 0.2s";
+        $dot.style.transition = "all 0.2s";
+        let $curves = document.querySelectorAll('.curve'+i)
+        for(let j=0; j<$curves.length; j++)
+        {
+            $curves[j].classList.remove('animOut');
+            $curves[j].classList.add('anim');
+            // $curves[j].setAttribute('animation-play-state', 'initial')
+            let $friendId = $curves[j].dataset.id // "3"
+            document.querySelector('.'+$friendId).style.fontWeight='900'
+        }
+    })
+
+    // $label[i].addEventListener('mouseover', () => 
+    // {
+    //     // console.log('out');
+    //     let $curves = document.querySelectorAll('.curve'+i)
+    //     for(let j=0; j<$curves.length; j++)
+    //     {
+    //         $curves[j].setAttribute('animation-play-state', 'paused')
+    //     }
+    // })
+
+    $label[i].addEventListener('mouseout', () => 
+    {
+        console.log('out')
+        $label[i].style.fontWeight='100'
+        let $dot = document.querySelector('.dot'+i)
+        $dot.style.fill='white'
+        $dot.setAttribute("r", 0)
+        $dot.style.transition = "all 0.2s";
+        $label[i].style.transition = "all 0.2s"
+        let $curves = document.querySelectorAll('.curve'+i)
+        for(let j=0; j<$curves.length; j++)
+        {
+            // $curves[j].setAttribute('animation-play-state', 'paused')
+        // }
+        // $curves[j].addEventListener('animationEnd', () => {
+            $curves[j].classList.remove('anim');
+            $curves[j].classList.add('animOut');
+
+            //récupere l'id vers lequel est dirigé la courbe
+            let $friendId = $curves[j].dataset.id 
+            document.querySelector('.'+$friendId).style.fontWeight='100'
+        }
+    })
+
+    //-----------------
+    // $label[i].addEventListener('mouseout', () => 
+    // {
+    //     // console.log('out');
+    //     $label[i].style.fontWeight='100'
+    //     let $dot = document.querySelector('.dot'+i)
+    //     $dot.style.fill='white'
+    //     $dot.setAttribute("r", 0);
+    //     $dot.style.transition = "all 0.2s";
+    //     $label[i].style.transition = "all 0.2s";
+    //     let $curves = document.querySelectorAll('.curve'+i)
+    //     for(let j=0; j<$curves.length; j++)
+    //     {
+
+    //         $curves[j].addEventListener('animationEnd', () => {
+    //             $curves[j].classList.remove('anim');
+
+    //             $curves[j].classList.add('animOut');
+
+    //         })
+    //     }
+    // })
+
+
+
+
+
+
+}
+
+
+
 
 }
 if(window.location.href.indexOf("/heroes") != -1  ){

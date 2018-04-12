@@ -1,0 +1,1 @@
+{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"character_friends":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/character\/4005-1475\/","id":1475,"name":"Hawkeye","site_detail_url":"https:\/\/comicvine.gamespot.com\/hawkeye\/4005-1475\/"}]},"version":"1.0"}
