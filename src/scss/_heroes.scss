@@ -14,6 +14,22 @@
         }
     }
 
+    .backgroundContainer{
+        .background{
+            position: absolute;
+            opacity: 0.2;
+        }
+        .background1{
+            
+            right: -150px;
+            top:300px;
+            img{
+                height:814px;
+            }
+            
+        }
+    }
+
     form {
         margin-top: 80px;
         input,select{
@@ -149,7 +165,6 @@
             
             .caracBack{
                 border-left: solid 0.5px white;
-                border-right: solid 0.5px white;
                 padding: 0px 35px;
                 margin-top:60px;
                 margin-bottom: 30px;

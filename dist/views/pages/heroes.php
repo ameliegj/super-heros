@@ -1,25 +1,10 @@
 <section class="heroesContainer container-fluid">
-    <!-- <form action="#">
-        <div class="form-1 col-lg-offset-1 col-lg-1">
-            <input type="text">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <input type="submit">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <select name='hero'> 
-            <optgroup>
-                <option class="Thor" value="bob">Thor </i></option>
-                <option value="bo">bo</option>
-            </optgroup>
-            
-            </select>
-            
-
-        </div> -->
-
-    </form> -->
     
+    <div class="backgroundContainer">
+        <div class="background background1">
+            <img src="../../assets/img/Gant.png" alt="Thanos">
+        </div>
+    </div>
     <div class="nameBar"></div>
     <article class="col-lg-10 col-lg-offset-1">
         <div class="row">
