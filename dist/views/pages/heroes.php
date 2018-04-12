@@ -1,32 +1,53 @@
+<?php
+$id_hero = "2268" ;
+
+$url3 = 'http://comicvine.gamespot.com/api/character/4005-'.$id_hero.'/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&field_list=name,aliases,deck,real_name,origin,creators,powers,first_appeared_in_issue&format=json';
+    $path3 = './cache/04/' . md5($url3) . '.txt' ;
+    if(file_exists($path3) && time() - filemtime($path3) < 43200)
+    {
+        $data3 = file_get_contents($path3);
+        $data3 = json_decode($data3);
+    }
+    else
+    {
+        $curl3 = curl_init($url3);
+        curl_setopt($curl3, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl3, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($curl3, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+        $data3 = curl_exec($curl3);
+        $data3 = json_decode($data3);
+        file_put_contents($path3, json_encode($data3));
+    }
+
+$infos_hero = $data3->results;
+
+
+
+// handle aliases list
+$aliases_array = $infos_hero->aliases;
+$aliases = explode("
+", $aliases_array);
+
+// first appearence in comics
+$first_comics_id = $infos_hero->first_appeared_in_issue->id;
+
+$rdftgyhjkl = "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-".$first_comics_id."/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&";
+
+echo '<pre>';
+var_dump($infos_hero);
+echo '</pre>';
+
+?>
+
 <section class="heroesContainer container-fluid">
-    <!-- <form action="#">
-        <div class="form-1 col-lg-offset-1 col-lg-1">
-            <input type="text">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <input type="submit">
-        </div>
-        <div class="form-2 col-lg-offset-1 col-lg-1">
-            <select name='hero'> 
-            <optgroup>
-                <option class="Thor" value="bob">Thor </i></option>
-                <option value="bo">bo</option>
-            </optgroup>
-            
-            </select>
-            
-
-        </div> -->
-
-    </form> -->
     
     <div class="nameBar"></div>
     <article class="col-lg-10 col-lg-offset-1">
         <div class="row">
-            <h1 class="heroName col-lg-7 ">Thor Odinson </h1> 
+            <h1 class="heroName col-lg-7 "><?=$infos_hero->name?></h1> 
         </div>
         <div class="row">
-            <h3 class="heroUnderName col-lg-5 ">Lord of Thunder</h3>
+            <h3 class="heroUnderName col-lg-5 "><?=$aliases[0]?></h3>
         </div>
         <div class="infoContainer">
             <div class="pictureContainer">
@@ -40,15 +61,30 @@
             <div class="col-lg-offset-1 col-lg-8">
                 <div class="descriBack">
                     <h4 class="description col-lg-7">DESCRIPTION</h4>
-                    <p class="descriptonText col-lg-6">is a fictional superhero appearing in American comic books published by Marvel Comics. The character, based on the Norse deity of the same name, is the Asgardian god of thunder and possesses the enchanted hammer Mjolnir, which grants him the ability to fly and manipulate weather amongst his other superhuman attributes.</p>
+                    <p class="descriptonText col-lg-10"><?=$infos_hero->deck?></p>
                 </div>
                 <div class="caracBack">
-                    <div class="carac"><span class="titleCarac col-sm-2">Race :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">GOD</div></div>
-                    <div class="carac"><span class="titleCarac col-sm-2">Origin :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">Azgard</div></div>
-                    <div class="carac"><span class="titleCarac col-sm-2">Alter ego :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">/</div></div>
-                    <div class="carac"><span class="titleCarac col-sm-2">Team :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">Avengers</div></div>
-                    <div class="carac"><span class="titleCarac col-sm-2">Creators :</span> <div class="col-sm-6 col-sm-offset-1 contentCarac">Stan Lee, Jack Kirby, Larry Lieber</div></div>
-                    <div class="carac"><span class="titleCarac col-sm-2">Powers :</span> <div class="col-sm-6 col-sm-offset-1 contentCarac"> </div></div>
+                    <div class="carac"><span class="titleCarac col-sm-2">Race :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac"><?=$infos_hero->origin->name?></div></div>
+                    <div class="carac"><span class="titleCarac col-sm-2">Origin :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">/</div></div>
+                    <div class="carac"><span class="titleCarac col-sm-2">Real name :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac"><?=$infos_hero->real_name?></div></div>
+                    <div class="carac"><span class="titleCarac col-sm-2">Team :</span> <div class="col-sm-4 col-sm-offset-1 contentCarac">/</div></div>
+                    <div class="carac"><span class="titleCarac col-sm-2">Creators :</span> 
+                    
+                    
+                        <div class="col-sm-6 col-sm-offset-1 contentCarac"><?php foreach ($infos_hero->creators as $_creator): ?><?= $_creator->name ?> <?php endforeach; ?></div>
+                
+                    
+                    </div>
+                    <div class="carac">
+                        <span class="titleCarac col-sm-2">Powers :</span> 
+                        <div class="col-sm-8 col-sm-offset-1 contentCarac powers">
+                            <?php foreach ($infos_hero->powers as $_power): ?>
+                                <div class="power">
+                                    <?= $_power->name ?>
+                                </div>
+                            <?php endforeach; ?> 
+                        </div>
+                    </div>
                     
                 </div>
                 
@@ -57,7 +93,7 @@
                     <div class="timelineContainer">
                         <div class="comicAppear col-sm-2 appearLegend">
                             <span>(COMICS)</span>
-                            <h5>Journey into mistery</h5>
+                            <h5>Journey into mistery<?=$first_comics_id?></h5>
                             <div class="triangleTimeline"></div>
                             
                         </div>
