@@ -49,12 +49,12 @@ const homeAnimation = () =>{
             
 
         }
-        // parentCadre.appendChild(infoCadre)
+        parentCadre.appendChild(infoCadre)
         infoCadre.appendChild(pCadre)
         infoCadre.appendChild(flatLink)
         pCadre.style.animation="textAppear 0.4s ease-in-out forwards 0.8s"
         flatLink.style.animation="lineAppear 0.4s ease-in-out forwards 0.4s"
-        // parentCadre.style.animation="donutSelect 0.4s ease-in-out forwards"
+        parentCadre.style.animation="donutSelect 0.4s ease-in-out forwards"
         
         setTimeout(function(){
             flatLink.style.opacity=1;
@@ -80,6 +80,7 @@ const homeAnimation = () =>{
 
     }
     const swicthDonuts = () => {
+        
         appearDonut("1")
         let k=1;
         setInterval(() => {

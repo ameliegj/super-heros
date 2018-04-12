@@ -63,6 +63,9 @@
         background: $black;
         .midWheel {
             position: relative;
+            .factGather{
+                display: none;
+            }
             .infoCadre {
                 font-size: 25px;
                 width: 400px;

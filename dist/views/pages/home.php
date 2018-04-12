@@ -19,6 +19,24 @@
     </div>
     <div class="wheelContainer">
         <div class="midWheel col-md-12">
+            <div class="factGather">
+                <?php
+
+                $req = $pdo->query('SELECT * FROM facts');
+                $facts = $req->fetchAll();
+                ?>
+                <p><?= ChromePhp::log($facts[0]); ?></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
             <div class="animcard2">
                 <div class="animToreBar">
                     <?php
