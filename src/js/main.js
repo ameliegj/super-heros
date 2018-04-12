@@ -117,8 +117,11 @@ const homeAnimation = () =>{
     runRelation()
 
 }
-if(window.location.href.indexOf("/heroes") != -1  ){
 
+    //HEROES
+const heroesAnimation = () => {
+    const appearBack =document.querySelector("appearanceBack")
+    
+    
 }
 
-    
