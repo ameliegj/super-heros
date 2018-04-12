@@ -1,5 +1,5 @@
-<section class="heroesContainer">
-    <form action="#">
+<section class="heroesContainer container-fluid">
+    <!-- <form action="#">
         <div class="form-1 col-lg-offset-1 col-lg-1">
             <input type="text">
         </div>
@@ -16,9 +16,9 @@
             </select>
             
 
-        </div>
+        </div> -->
 
-    </form>
+    </form> -->
     
     <div class="nameBar"></div>
     <article class="col-lg-10 col-lg-offset-1">
@@ -89,6 +89,24 @@
                 </div>
                 <div class="totalBack">
                     <h4>Total number of appearances</h4>
+                    <div class="ratingContainer">         
+                        <div class="rating ">
+                            <div class="">Comics</div>
+                            <div class="lacet col-lg-offset-2"></div>
+                            <div class="bubble col-lg-offset-8">
+                                <div>10</div>
+                            </div>
+                        </div>
+
+                        <div class="rating r2 ">
+                            <div class="">Movie</div>
+                            <div class="lacet l2 col-lg-offset-2"></div>
+                            <div class="bubble b2 col-lg-offset-8">
+                                <div>10</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 
             </div>
@@ -129,3 +147,17 @@
     </div>
 
 </section>
+
+ <?
+    
+    if (strpos($q, 'heroes/') !== false) {
+
+    echo '<script src="../../assets/js/main.min.js"> </script>';
+    }
+    else{
+      echo '<script src="assets/js/main.min.js"> </script>';
+    }
+  ?>
+<script>
+    heroesAnimation()
+</script>

@@ -139,8 +139,6 @@
                     left: 50%;
                     top: 150px;
                 }
-                .bar {
-                    background: white;
                 .bar{
                     background: $white;
                     position: absolute;
@@ -152,24 +150,7 @@
             }
         }
     }
-    }
-    .relationContainer {
-        height: 300px;
-        border-top: 1px white solid;
-        .relationBack {
-            width: 1200px;
-            height: 650px;
-            margin-left: calc(50% - 600Px);
-            border: solid white 1px;
-            .relationWheel {
-                
-                .relHero {
-                    position: absolute;
-                }
-            }
 
-        }
-    }
     .ratingContainer {
         margin-top: 300px;
         .rating {
@@ -240,20 +221,13 @@
                 animation-fill-mode: forwards;
 
                 @keyframes bubbleRize {
-
                     0% {
                         transform: scale(0, 0);
-
-
                     }
                     100% {
                         transform: scale(1, 1);
-
-
                     }
                 }
-
-
             }
             .bubbleGreen {
                 width: 100px;
@@ -271,16 +245,11 @@
                 animation-fill-mode: forwards;
 
                 @keyframes bubbleRize {
-
                     0% {
                         transform: scale(0, 0);
-
-
                     }
                     100% {
                         transform: scale(1, 1);
-
-
                     }
                 }
 
@@ -300,127 +269,83 @@
                 animation-delay: 0.7s;
                 transform: scale(0, 0);
                 animation-fill-mode: forwards;
-
                 @keyframes bubbleRize {
-
                     0% {
                         transform: scale(0, 0);
-
-
                     }
                     100% {
                         transform: scale(1, 1);
-
-
                     }
                 }
-
-
             }
-
-
         }
     }
 
+    .relationContainer {
+        border-top:1px $white solid;
 
-
-
-
-
-
-//     .relationContainer{
-//         height:300px;
-//         border-top:1px white solid;
-//         .relationBack{
-//             width: 1200px;
-//             height: 650px;
-//             margin-left: calc(50% - 600Px);
-//             border: solid white 1px;
-//             position: relative;
-//             .relationWheel{
-//                 position: absolute;
-//                 top:50%;
-//                 .relBar{
-
-//                 }
-//                 .relHero{
-//                     position: absolute;
-//                 }
-//             }
-
-//         }
-//     }
-// }
-
-
-.relationContainer {
-    border-top:1px $white solid;
-
-    .relationshipGraph {
-        width: 700px;
-        height: 700px;
-        position: relative;
-        // background-color: grey;
-    }
-    .relationshipGraph>div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        // background-color: grey;
-        // transform: translateX(50%) translateY(50%);
-        .item {
+        .relationshipGraph {
+            width: 700px;
+            height: 700px;
+            position: relative;
+            // background-color: grey;
+        }
+        .relationshipGraph>div {
             position: absolute;
-            .name {
-                text-align:right;
-                width: 150px;
+            top: 50%;
+            left: 50%;
+            // background-color: grey;
+            // transform: translateX(50%) translateY(50%);
+            .item {
                 position: absolute;
-                font-family: avenir;
-                font-weight: 100;
+                .name {
+                    text-align:right;
+                    width: 150px;
+                    position: absolute;
+                    font-family: avenir;
+                    font-weight: 100;
+                }
             }
         }
 
-
-
+        .curve {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+        }
+        
+        
+        .anim {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: draw 2s cubic-bezier(0.245, 0.005, 0.350, 1.005) forwards;
+        }
+        
+        .animOut {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 0;
+            animation: drawReversed 1s forwards;
+        }
+        
+        @keyframes draw {
+            from {
+                stroke-dashoffset: 400;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        @keyframes drawReversed {
+            from {
+                stroke-dashoffset: 0;
+            }
+            to {
+                stroke-dashoffset: 400;
+            }
+        }
+        
     }
 
-
-}
-
-.curve {
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-}
-
-
-.anim {
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: draw 2s forwards;
-}
-
-.animOut {
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: drawReversed 1s forwards;
-}
-
-@keyframes draw {
-    from {
-        stroke-dashoffset: 400;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes drawReversed {
-    from {
-        stroke-dashoffset: 0;
-    }
-    to {
-        stroke-dashoffset: 400;
-    }
-}
 
 
 } //close homecontainer

@@ -1,9 +1,10 @@
 .heroesContainer {
     margin: 0;
-    background-color: black;
-    height: 1800px;
+    background-color: $black;
+    height: auto;
     font-family: 'Lato';
-
+    margin-top:50px;
+    
     header {
         background-color: white;
         height: 40px;
@@ -247,7 +248,7 @@
                             }
                         }
                         .cardLeft{
-                            right:-100px;
+                            right:-70px;
                         }
                     }
                 }
@@ -259,12 +260,94 @@
                     font-size: 30px;
                     text-transform: uppercase;
                 }
+                .ratingContainer {
+                    
+                    height: 600px;
+                    .rating {
+                        margin-bottom: 50px;
+                        margin-top: 200px;
+                        position: relative;
+                        
+                        .lacet {
+                            margin: -10px 0px 0px 220px;
+                            background-color: white;
+                            width: 65%;
+                            height: 1px;
+                            animation: lacetRize 0.8s ease-out ;
+                            transform-origin: 0% 50%;
+                            
+                            @keyframes lacetRize {           
+                                0% {
+                                    transform: scale(0, 0);           
+                                }
+                                100% {
+                                    transform: scale(1, 1);            
+                                }
+                            }
+                            
+                        }
+                        .l2{
+                            width: 40%;
+                        }
+                        .bubble {
+                            width: 190px;
+                            height: 190px;
+                            border: solid;
+                            border:none;
+                            border-radius: 100%;
+                            background-color: #9F1319;
+                            margin-top: -50px;
+                            transform-origin: 50% 50%;
+                            animation-fill-mode: forwards;
+                            position: absolute;
+                            right:0;
+                            top:-30px;
+                            text-align: center;
+                            vertical-align: baseline;
+                            opacity: 1;
+                            animation: ballFollow 0.8s ease-out;
+
+                            @keyframes ballFollow {
+                                from{transform :translateX(-400px);}
+                                to{transform :translateX(0);}
+                            }
+                            div{
+                                height: 100%;
+                                width: 100%;
+                                padding: 40px;
+                                font-weight: bold;  
+                                font-size: 60px;
+                                padding-top:50px;
+                                
+                            }
+                        
+                        }
+                        .b2{
+                            width: 77px;
+                            height: 77px;
+                            left: 0;
+                            top:22px;
+                            div{
+                                font-size:30px;
+                                padding: 10px;
+                                font-weight: bold;
+                                padding-top:15px;
+                            }
+                        }
+                    }
+                    .r2{
+                        margin-top: 200px;
+                    }
+            
+            
+                }
             }
             
         }
         .relationBack{
             height: 500px; 
             width: 100%; 
+            margin-top: 300px;
             
             .diagramContainer{
                 position: relative;

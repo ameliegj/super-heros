@@ -14,6 +14,7 @@ body {
     margin: 0;
     font-family: 'Lato';
     color: $white;
+    background: $black;
     h2 {
         font-weight: bolder;
         font-size: 30px;
@@ -21,3 +22,9 @@ body {
     }
     background-color: $black
 }
+
+@import 'anim';
+@import 'home';
+@import 'header';
+@import 'heroes';
+@import '404';

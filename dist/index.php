@@ -2,7 +2,8 @@
     // Config
     // include 'config.php';
     require_once 'views/actions/ChromePhp.php';
-    
+    $curUrl="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
     // Routing
 
     if (empty( $_GET['q']))
@@ -19,15 +20,10 @@
         case '':
             $page='home';
             break;
-        case 'anim':
-            $page = 'anim';
-            break;
         case 'home':
             $page = 'home';
             break;
-        case 'heroes':
-            $page = "heroes";
-            break;
+
         case 'amelie':
             $page = "amelie";
             break;
@@ -46,19 +42,40 @@
         default:
             $page='404';
             break;
+        
     } 
     
     // Includes
-    if($page == '404'){
+
+
+
+    if (strpos($curUrl, 'heroes/') !== false) {
+        if(strpos($curUrl, 'localhost') !== false){
+            $heroes=substr($curUrl,24);//Local
+            
+        }
+        else{
+            // $heroes=substr($curUrl,27);//Online
+        }
+        include 'views/partials/head.php';
+        include 'views/partials/header.php';
+        include 'views/pages/heroes.php';
+        include 'views/partials/foot.php';
+    }
+
+    else if($page == '404'){
     include 'views/partials/head.php';
     include 'views/pages/'.$page.'.php';
     include 'views/partials/foot.php';
     }
 
-    include 'views/partials/head.php';
-    include 'views/partials/header.php';
-    include 'views/pages/'.$page.'.php';
-    include 'views/partials/foot.php';
-
+    else{
+        include 'views/partials/head.php';
+        include 'views/partials/header.php';
+        include 'views/pages/'.$page.'.php';
+        include 'views/partials/foot.php';
+    
+    }
+   
 
 ?>
