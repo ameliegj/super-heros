@@ -21,3 +21,9 @@ body {
     }
     background-color: $black
 }
+
+@import 'anim';
+@import 'home';
+@import 'header';
+@import 'heroes';
+@import '404';

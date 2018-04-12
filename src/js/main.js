@@ -166,6 +166,7 @@ for(let i=0; i<$label.length; i++)
             // $curves[j].setAttribute('animation-play-state', 'initial')
             let $friendId = $curves[j].dataset.id // "3"
             document.querySelector('.'+$friendId).style.fontWeight='900'
+            document.querySelector('.'+$friendId).style.transition = "all 2s";
         }
     })
 
