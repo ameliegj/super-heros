@@ -70,7 +70,7 @@ function getImage($id)
 // echo '<pre>';
 // print_r($friends_keys[0]);
 // echo '</pre>';
-
+ 
 ?>
 
 <section class="heroesContainer container-fluid">
