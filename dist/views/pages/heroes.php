@@ -67,9 +67,9 @@ function getImage($id)
     return $link;
 }
 
-echo '<pre>';
-print_r($friends_keys[0]);
-echo '</pre>';
+// echo '<pre>';
+// print_r($friends_keys[0]);
+// echo '</pre>';
 
 ?>
 
