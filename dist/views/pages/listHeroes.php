@@ -4,9 +4,11 @@
     <table>
         <?php
         
+        include 'views/actions/allHerosApi.php';
         
         for($i=1;$i<37;$i++){
             ?>        
+
                 <tr class="on">
                     <th>
                         <a href="heroes/id">
@@ -15,7 +17,7 @@
                     </th>
                     <th class="thTitle">Drax the Destroyer</th>
                     <th>Thor</th>
-                    <th>Thor : Dark worldt</th>
+                    <th>Thor : Dark world</th>
                     <th class="name1">Thor : Ragnarok</th>
                     <th class="spent1">First appearance : 2011</th>
                 </tr>
