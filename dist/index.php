@@ -3,9 +3,7 @@
     include 'config.php';
     require_once 'views/actions/ChromePhp.php';
     $curUrl="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
     // Routing
-
     if (empty( $_GET['q']))
     {
         $q = '';
@@ -14,7 +12,7 @@
     {
         $q = $_GET['q'];
     }
-
+    $page='listHeroes';
     switch($q)
     {
         case '':
@@ -92,6 +90,5 @@
         include 'views/partials/foot.php';
     
     }
-   
 
 ?>
