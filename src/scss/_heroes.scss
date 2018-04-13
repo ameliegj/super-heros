@@ -116,7 +116,7 @@
         .infoContainer {
             
             margin-top: 30px;
-            height:2000px;
+            // height:2000px;
             .pictureContainer {
                 position: relative;
                 .animRound {
@@ -373,8 +373,6 @@
                 }
             }
         }
-        
-    }
 
 
     .relationBack {
@@ -390,7 +388,6 @@
                 background-color: white;
                 position: absolute;
                 // img{
-                 
                     // overflow: hidden;
                 // }
             }
@@ -477,6 +474,8 @@
         height: 100vh;
         background: url("../img/avengersMarvel.png")
     }
+    }
+
 }
 
 .loaderContainer {

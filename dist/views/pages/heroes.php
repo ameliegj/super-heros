@@ -101,7 +101,7 @@ function getImage($id)
                     <div class="circle1 circle"></div>
                     <div class="circle2 circle"></div>
                 </div>
-                <div class="heroPictures col-lg-3 "><img src="" alt=""></div>
+                <img src="../../assets/img/profil_pictures/<?=$id_hero?>.png" alt="profil picture" class="heroPictures col-lg-3" />
             </div>
             
             <div class="col-lg-offset-1 col-lg-8">
@@ -135,7 +135,7 @@ function getImage($id)
                 </div>
                 
                 <div class="appearanceBack">
-                    <h4 class="col-lg-7">FIRST APPEARANCE</h4>
+                    <h4 class="col-lg-7">FIRST AND LAST APPEARANCE</h4>
                     <div class="timelineContainer">
                         <div class="comicAppear col-sm-3 appearLegend">
                             <span>(COMICS)</span>
@@ -145,7 +145,7 @@ function getImage($id)
                         </div>
                         <div class="appearLegend col-sm-3 movieAppear">
                             <span>(MOVIE)</span>
-                            <h5>Thor</h5>
+                            <h5>Avengers : Infinity War</h5>
                             <div class="triangleTimeline"></div>
                             
                         </div>
@@ -161,21 +161,21 @@ function getImage($id)
                                     echo $year_comic[0];
                                 ?>
                             </div>
-                            <div class="appearLegend movieAppear dateAppear dateL">2011</div>
+                            <div class="appearLegend movieAppear dateAppear dateL">2018</div>
                         </div>
                         <div class="posterContainer col-sm-12">
                             <div class="posterCard cardRight">
                                 <img src="<?=$first_comic_data->image->original_url?>" alt="marvelFilm">
                             </div>
                             <div class="posterCard cardLeft">
-                                <img src="" alt="marvelFilm">
+                                <img src="../../assets/img/infinity-war.jpg" alt="marvelFilm">
                             </div>
                         </div>
                     </div>
                     
                     
                 </div>
-                <div class="totalBack">
+                <!-- <div class="totalBack">
                     <h4>Total number of appearances</h4>
                     <div class="ratingContainer">         
                         <div class="rating ">
@@ -195,12 +195,11 @@ function getImage($id)
                         </div>
 
                     </div>
-                </div>
+                </div> -->
                 
             </div>
         </div>
-        <div class="relationBack">
-        <h4 class="col-lg-7">RELATIONS</h4>
+        <div class="relationBack  col-lg-offset-1 col-lg-9">
                     <div class="diagramContainer">
                         <div class="alliesPortraitContainer">
                             <h5>Friends</h5>
@@ -219,6 +218,7 @@ function getImage($id)
                         </div>
                         <div class="mainPortraitContainer">
                             <div class="mainPortrait portrait">
+                            <img src="../../assets/img/profil_pictures/<?=$id_hero?>.png" alt="profil picture" class="mainPortrait portrait" />
                             </div>
                         </div>
                         <div class="vilainsPortraitContainer">
