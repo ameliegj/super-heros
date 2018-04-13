@@ -102,24 +102,25 @@
         </div>
     </div>
     <div class="spiderContainer col-sm-offset-1  col-sm-11 ">
-        <img class="col-sm-3" src="../../assets/img/Spider.png" alt="spider-man">
+        <img class="col-sm-3" src="assets/img/Spider.png" alt="spider-man">
         <div class="col-sm-offset-1 col-sm-5">
-            <h1>HEY! LIKE WHAT YOU SEE...</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam architecto aliquam alias sapiente dicta voluptatem cupiditate repudiandae blanditiis, delectus quisquam iusto ducimus laboriosam officiis cumque, atque, repellat laudantium. Dignissimos, ullam.</p>
+            <h1>HEY! LIKE WHAT YOU SEE ?</h1>
+            <p>You want to know more about the MCU movies and others interesting facts ? 
+It’s possible ! Make yourslef home and discover those beautiful data </p>
         </div>
         <div class="button col-sm-offset-4 col-sm-10">
-            <div> <a href="#">SEE MORE</a></div>
+            <div> <a href="/marvel/movie">SEE MORE</a></div>
         </div>
     </div>
 
     <div class="spiderContainer col-sm-offset-1  col-sm-11  ">
-        <img class="col-sm-3" src="../../assets/img/MARVEL-LEGENDS-SERIES-INFINITY-GAUNTLET-oop-2.png" alt="spider-man">
+        <img class="col-sm-3" src="assets/img/MARVEL-LEGENDS-SERIES-INFINITY-GAUNTLET-oop-2.png" alt="spider-man">
         <div class="col-sm-offset-1 col-sm-5">
-            <h1>WILL YOU READY FOR THE BIG FIGHT</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam architecto aliquam alias sapiente dicta voluptatem cupiditate repudiandae blanditiis, delectus quisquam iusto ducimus laboriosam officiis cumque, atque, repellat laudantium. Dignissimos, ullam.</p>
+            <h1>WILL YOU READY FOR THE BIG FIGHT ?</h1>
+            <p>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</p>
         </div>
         <div class="button col-sm-offset-4 col-sm-10">
-            <div><a href="#">BUY TICKET</a></div>
+            <div><a href="http://www.marvel.com">BUY TICKET</a></div>
 
         </div>
 

@@ -37,7 +37,7 @@
         
     </div>
     <div class="col-sm-3 filterPanel">
-        <img src="../../assets/img/avengersMarvel.png" alt="Avengers">
+        <img src="assets/img/avengersMarvel.png" alt="Avengers">
         <div class="filterBack">
             <div class="filterContent">
                 
