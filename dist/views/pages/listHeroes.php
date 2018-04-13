@@ -3,7 +3,7 @@
     <h1>Heroes List <div class="grdUnder"></div></h1>
     <table>
         <?php
-        include 'views/actions/allHerosApi.php';
+        
         
         for($i=1;$i<37;$i++){
             ?>        

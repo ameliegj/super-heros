@@ -1,6 +1,6 @@
 <?php
     // Config
-    // include 'config.php';
+    include 'config.php';
     require_once 'views/actions/ChromePhp.php';
     $curUrl="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
@@ -38,7 +38,7 @@
         case 'links':
             $page = "amelie2";
             break;
-        case 'listHeroes':
+        case 'heroes':
             $page = "listHeroes";
             break;
         case 'movie':
@@ -56,7 +56,6 @@
 
     if (strpos($curUrl, 'heroes/') !== false) {
         if(strlen($curUrl) > 16){
-            ChromePhp::log("A");
             if(strpos($curUrl, 'localhost') !== false){
                 $heroes=substr($curUrl,24);//Local
             }
@@ -69,10 +68,10 @@
             include 'views/partials/foot.php';
         }
         else {
-            ChromePhp::log($page);
+            
             include 'views/partials/head.php';
             include 'views/partials/header.php';
-            include 'views/pages/'.$page.'.php';
+            include 'views/pages/listHeroes.php';
             include 'views/partials/foot.php';
     
         }
@@ -86,7 +85,7 @@
     }
 
     else{
-        ChromePhp::log($page);
+        ;
         include 'views/partials/head.php';
         include 'views/partials/header.php';
         include 'views/pages/'.$page.'.php';
