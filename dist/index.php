@@ -1,6 +1,6 @@
 <?php
     // Config
-    include 'config.php';
+    // include 'config.php';
     require_once 'views/actions/ChromePhp.php';
     $curUrl="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
@@ -23,7 +23,6 @@
         case 'home':
             $page = 'home';
             break;
-
         case 'amelie':
             $page = "amelie";
             break;
@@ -34,6 +33,12 @@
             $page = "amelie2";
             break;
         case 'heroes':
+            $heroes = "heroes";
+            break;
+        case 'links':
+            $page = "amelie2";
+            break;
+        case 'listHeroes':
             $page = "listHeroes";
             break;
         case 'movie':

@@ -2,8 +2,8 @@
     margin: 0;
     background-color: $black;
     height: auto;
-    
-    margin-top:50px;
+    font-family: 'Lato';
+    margin-top: 50px;
     
     header {
         background-color: white;
@@ -13,7 +13,6 @@
             color: black;
         }
     }
-
     .backgroundContainer{
         .background{
             position: absolute;
@@ -89,9 +88,13 @@
         position: absolute;
         left: 0;
         width: 80px;
-        height:2px;
-        top:255px;
+        height: 2px;
+        top: 255px;
         background: white;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 30px;
     }
     article {
         padding: 0;
@@ -110,39 +113,40 @@
             font-weight: 200;
             font-size: 26px;
         }
-        .infoContainer{
+        .infoContainer {
+            
             margin-top: 30px;
             height:2000px;
-            .pictureContainer{
+            .pictureContainer {
                 position: relative;
-                .animRound{
+                .animRound {
                     height: 200px;
                     width: 200px;
                     position: absolute;
-                    top:20px;
-                    left:-20px;
-                    .circle{
+                    top: 20px;
+                    left: -20px;
+                    .circle {
                         position: absolute;
                         border-radius: 50%;
                         border: 1px solid $marvel;
                         will-change: transform;
                     }
-                    .circle1{
-                        top:calc(50% - 120px);
-                        left:calc(50% - 120px);
-                        width:240px;
-                        height:240px;
-                        border-width:2px;
+                    .circle1 {
+                        top: calc(50% - 120px);
+                        left: calc(50% - 120px);
+                        width: 240px;
+                        height: 240px;
+                        border-width: 2px;
                         border-bottom-color: transparent;
                         border-right-color: transparent;
                         border-left-color: transparent;
                         animation: rotation 1.75s linear infinite;
                     }
-                    .circle2{
-                        top:calc(50% - 96px);
-                        left:calc(50% - 96px);
-                        width:192px;
-                        height:192px;
+                    .circle2 {
+                        top: calc(50% - 96px);
+                        left: calc(50% - 96px);
+                        width: 192px;
+                        height: 192px;
                         border-width: 2px;
                         border-top-color: transparent;
                         border-right-color: transparent;
@@ -151,7 +155,6 @@
                     }
                 }
                 .heroPictures {
-    
                     margin-top: 40px;
                     padding: 0;
                     width: 160px;
@@ -160,321 +163,319 @@
                     background-color: white;
                 }
             }
-            .descriBack{
-                height: 200px;
-                
+            .descriBack {
+                height: 300px;
                 .description {
-                    margin-top: 40px;
-                    padding: 0;
-                    font-weight: 300;
-                    font-size: 30px;
-                    
-        
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    padding: 0; // font-weight: 600;
+                    // font-size: 30px;
                 }
                 .descriptonText {
                     padding: 0;
                     font-weight: 300;
-                    font-size:18px;
-                    
-                    width: 550px;
+                    font-size: 18px;
                 }
             }
-            
-            .caracBack{
-                border-left: solid 0.5px white;
+            .caracBack {
+                // border-left: solid 0.5px white;
+                // border-right: solid 0.5px white;
                 padding: 0px 35px;
-                margin-top:60px;
+                margin-top: 60px;
                 margin-bottom: 30px;
                 .carac {
                     display: block;
                     margin-bottom: 20px;
                     display: inline-block;
-                    width:100%;
-                span{
-                    padding: 0;
+                    width: 100%;
+                    span {
+                        padding: 0;
+                    }
+                    .titleCarac {
+                        display: inline-block;
+                        font-weight: 200;
+                    }
+                    .contentCarac {
+                        font-weight: 600;
+                    }
+
+                    .powers {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap:wrap;
+                        align-content: space-between;
+                        height: 200px;
+                    }
                 }
-                .titleCarac{
-                    display: inline-block;
-                    font-weight: 300;
-                }
-                }
-            
             }
-            .appearanceBack{
+            .appearanceBack {
                 height: 900px;
-                h4{
+                h4 {
                     margin-top: 40px;
-                    padding: 0;
-                    font-weight: 300;
-                    font-size: 30px;
-                    
+                    padding: 0; // font-weight: 300;
+                    // font-size: 30px;
                 }
-                .timelineContainer{
+                .timelineContainer {
                     position: relative;
-                    height:330px;
+                    height: 330px;
                     padding-top: 200px;
-                    .arrowContainer{
-                        
-                        .arrowBar{
+                    .arrowContainer {
+                        .arrowBar {
                             width: 1157px;
                             height: 2px;
                             background: white;
                             position: absolute;
-                            left:-240px;
+                            left: -240px;
                             bottom: 0;
-                            
                         }
                     }
-                    .appearLegend{
+                    .appearLegend {
                         position: absolute;
-                        min-height:120px;
-                        
-                        span{
+                        min-height: 120px;
+                        span {
                             font-weight: 300;
                             font-size: 15px;
                         }
-                        h5{
+                        h5 {
                             font-weight: bold;
                             text-transform: uppercase;
                             font-size: 24px;
+                            width: 300px;
                         }
-                        .triangleTimeline{
-                            display : inline-block;
-                            height : 0;
-                            width : 0;
+                        .triangleTimeline {
+                            display: inline-block;
+                            height: 0;
+                            width: 0;
                             bottom: -25px;
                             position: absolute;
-                            border-top : 17px solid white;
-                            border-right : 10px solid transparent;
-                            border-left : 10px solid transparent;
+                            border-top: 17px solid white;
+                            border-right: 10px solid transparent;
+                            border-left: 10px solid transparent;
                         }
                     }
-                    .comicAppear{
+                    .comicAppear {
                         left: 0;
                     }
-                    .movieAppear{
+                    .movieAppear {
                         right: 0;
                     }
-                    .dateAppear{
+                    .dateAppear {
                         font-weight: bold;
                         font-size: 64px;
                         bottom: -35px;
-                        bottom:-155px;
+                        bottom: -155px;
                     }
-                    .dateL{
-                        right:-40px;
+                    .dateL {
+                        right: -40px;
                     }
-                    .posterContainer{
-                        height:200px;
-                        
-                        .posterCard{
-                            border:solid 1px white;
-                            height:300px;
+                    .posterContainer {
+                        height: 200px;
+                        .posterCard {
+                            // border: solid 1px white;
+                            height: 300px;
                             width: 190px;
                             display: inline-block;
                             position: absolute;
                             bottom: -400px;
-                            img{
+                            img {
                                 width: 190px;
-                                height:290px;
+                                height: 290px;
                             }
                         }
-                        .cardLeft{
-                            right:-70px;
+                        .cardLeft {
+                            right: -70px;
                         }
                     }
                 }
             }
-            .totalBack{
-                height:100px;   
-                h4{
-                    font-weight: 300;
-                    font-size: 30px;
+            .totalBack {
+                height: 100px;
+                h4 {
+                    // font-weight: 300;
+                    // font-size: 30px;
                     text-transform: uppercase;
                 }
                 .ratingContainer {
-                    
                     height: 600px;
                     .rating {
                         margin-bottom: 50px;
                         margin-top: 200px;
                         position: relative;
-                        
                         .lacet {
                             margin: -10px 0px 0px 220px;
                             background-color: white;
                             width: 65%;
                             height: 1px;
-                            animation: lacetRize 0.8s ease-out ;
+                            animation: lacetRize 0.8s ease-out;
                             transform-origin: 0% 50%;
-                            
-                            @keyframes lacetRize {           
+                            @keyframes lacetRize {
                                 0% {
-                                    transform: scale(0, 0);           
+                                    transform: scale(0, 0);
                                 }
                                 100% {
-                                    transform: scale(1, 1);            
+                                    transform: scale(1, 1);
                                 }
                             }
-                            
                         }
-                        .l2{
+                        .l2 {
                             width: 40%;
                         }
                         .bubble {
                             width: 190px;
                             height: 190px;
                             border: solid;
-                            border:none;
+                            border: none;
                             border-radius: 100%;
                             background-color: #9F1319;
                             margin-top: -50px;
                             transform-origin: 50% 50%;
                             animation-fill-mode: forwards;
                             position: absolute;
-                            right:0;
-                            top:-30px;
+                            right: 0;
+                            top: -30px;
                             text-align: center;
                             vertical-align: baseline;
                             opacity: 1;
                             animation: ballFollow 0.8s ease-out;
-
                             @keyframes ballFollow {
-                                from{transform :translateX(-400px);}
-                                to{transform :translateX(0);}
+                                from {
+                                    transform: translateX(-400px);
+                                }
+                                to {
+                                    transform: translateX(0);
+                                }
                             }
-                            div{
+                            div {
                                 height: 100%;
                                 width: 100%;
                                 padding: 40px;
-                                font-weight: bold;  
+                                font-weight: bold;
                                 font-size: 60px;
-                                padding-top:50px;
-                                
+                                padding-top: 50px;
                             }
-                        
                         }
-                        .b2{
+                        .b2 {
                             width: 77px;
                             height: 77px;
                             left: 0;
-                            top:22px;
-                            div{
-                                font-size:30px;
+                            top: 22px;
+                            div {
+                                font-size: 30px;
                                 padding: 10px;
                                 font-weight: bold;
-                                padding-top:15px;
+                                padding-top: 15px;
                             }
                         }
                     }
-                    .r2{
+                    .r2 {
                         margin-top: 200px;
                     }
-            
-            
                 }
             }
-            
         }
-        .relationBack{
-            height: 500px; 
-            width: 100%; 
-            margin-top: 300px;
+        
+    }
+
+
+    .relationBack {
+        height: 500px;
+        width: 100%;
+        margin-top: 300px;
+        .diagramContainer {
+            position: relative;
+            height: 100%;
+            text-align: center;
+            .portrait {
+                border-radius: 100%;
+                background-color: white;
+                position: absolute;
+                // img{
+                 
+                    // overflow: hidden;
+                // }
+            }
+
+            .sidePortrait {
+                width: 86px;
+                height: 86px;
+            }
+            .mainPortrait {
+                width: 160px;
+                height: 160px;
+                left: calc(50% - 80px);
+                top: calc(50% - 80px);
+            }
             
-            .diagramContainer{
-                position: relative;
+            h5 {
+                font-weight: bold;
+                font-size: 25px;
+                position: absolute;
+                top: -100px;
+                left: calc(50% - 40px)
+            }
+            .alliesPortraitContainer {
+                width: 33%;
                 height: 100%;
-                text-align: center;
-                .portrait{
-                    border-radius: 100%;
-                    background-color: white;
-                    position: absolute;
+                position: absolute;
+                .alliesPortrait1 {
+                    top: 0;
+                    right: 10%;
+                    animation: relationsMove1 12s infinite ease-in-out forwards;
                 }
-                .mainPortrait{
-                    width: 160px;
-                    height: 160px;
-                    left: calc(50% - 80px);
-                    top: calc(50% - 80px);
+                .alliesPortrait2 {
+                    top: 25%;
+                    left: 15%;
+                    animation: relationsMove2 10s infinite ease-in-out forwards;
                 }
-                .sidePortrait{
-                    width: 86px;
-                    height: 86px;
-                    
+                .alliesPortrait3 {
+                    top: 50%;
+                    right: 15%;
+                    animation: relationsMove3 9s infinite ease-in-out forwards;
                 }
-                h5{
-                    font-weight: bold;
-                    font-size: 25px;
-                    position: absolute;
-                    top:-100px;
-                    left:calc(50% - 40px)
+                .alliesPortrait4 {
+                    top: 75%;
+                    left: 20%;
+                    animation: relationsMove4 10s infinite ease-in-out forwards;
                 }
-                .alliesPortraitContainer{
-                    width: 33%;
-                    height: 100%;
-                    position: absolute;
-                    
-                    .alliesPortrait1{
-                        top:0;
-                        right: 10%;
-                        animation: relationsMove1 12s infinite ease-in-out forwards ;
-                    }
-                    .alliesPortrait2{
-                        top:25%;
-                        left: 15%;
-                        animation: relationsMove2 10s infinite ease-in-out forwards ;
-                    }
-                    .alliesPortrait3{
-                        top:50%;
-                        right: 15%;
-                        animation: relationsMove3 9s infinite ease-in-out forwards ;
-                    }
-                    .alliesPortrait4{
-                        top:75%;
-                        left: 20%;
-                        animation: relationsMove4 10s infinite ease-in-out forwards ;
-                    }
-                    
-                }
-                .vilainsPortraitContainer{
-                    width: 33%;
-                    height: 100%;
-                    position: absolute;
+            }
+            .vilainsPortraitContainer {
+                width: 33%;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                div {
                     right: 0;
-                    top:0;
-                    div{
-                        right: 0;
-                    }
-                    .vilainsPortrait1{
-                        top:0;
-                        left: 10%;
-                        animation: relationsMove4 12s infinite ease-in-out forwards ;
-                    }
-                    .vilainsPortrait2{
-                        top:25%;
-                        left: 38%;
-                        animation: relationsMove3  8s infinite ease-in-out forwards ;
-                    }
-                    .vilainsPortrait3{
-                        top:50%;
-                        right: 16%;
-                        animation: relationsMove2 7s infinite ease-in-out forwards ;
-                    }
-                    .vilainsPortrait4{
-                        top:75%;
-                        left: 16%;
-                        animation: relationsMove1 10s infinite ease-in-out forwards ;
-                    }
-                    
+                }
+                .vilainsPortrait1 {
+                    top: 0;
+                    left: 10%;
+                    animation: relationsMove4 12s infinite ease-in-out forwards;
+                }
+                .vilainsPortrait2 {
+                    top: 25%;
+                    left: 38%;
+                    animation: relationsMove3 8s infinite ease-in-out forwards;
+                }
+                .vilainsPortrait3 {
+                    top: 50%;
+                    right: 16%;
+                    animation: relationsMove2 7s infinite ease-in-out forwards;
+                }
+                .vilainsPortrait4 {
+                    top: 75%;
+                    left: 16%;
+                    animation: relationsMove1 10s infinite ease-in-out forwards;
                 }
             }
         }
-        .backPhotoContainer{
-            position: absolute;
-            width: 100vw;
-            z-index: -1;
-            height:100vh;
-            background: url("../img/avengersMarvel.png")
-        }
+    }
+    .backPhotoContainer {
+        position: absolute;
+        width: 100vw;
+        z-index: -1;
+        height: 100vh;
+        background: url("../img/avengersMarvel.png")
     }
 }
 
@@ -508,6 +509,4 @@
             top: calc(50% - 77px)
         }
     }
-
-
 }
