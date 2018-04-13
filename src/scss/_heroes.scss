@@ -20,6 +20,10 @@
         top: 255px;
         background: white;
     }
+    h4 {
+        font-weight: 600;
+        font-size: 30px;
+    }
     article {
         padding: 0;
         color: white;
@@ -38,10 +42,7 @@
             font-size: 26px;
         }
         .infoContainer {
-            h4 {
-                font-weight: 600;
-                font-size: 30px;
-            }
+            
             margin-top: 30px;
             height:2000px;
             .pictureContainer {
@@ -167,6 +168,7 @@
                             font-weight: bold;
                             text-transform: uppercase;
                             font-size: 24px;
+                            width: 300px;
                         }
                         .triangleTimeline {
                             display: inline-block;
@@ -197,7 +199,7 @@
                     .posterContainer {
                         height: 200px;
                         .posterCard {
-                            border: solid 1px white;
+                            // border: solid 1px white;
                             height: 300px;
                             width: 190px;
                             display: inline-block;
@@ -315,6 +317,15 @@
                 border-radius: 100%;
                 background-color: white;
                 position: absolute;
+                // img{
+                 
+                    // overflow: hidden;
+                // }
+            }
+
+            .sidePortrait {
+                width: 86px;
+                height: 86px;
             }
             .mainPortrait {
                 width: 160px;
@@ -322,10 +333,7 @@
                 left: calc(50% - 80px);
                 top: calc(50% - 80px);
             }
-            .sidePortrait {
-                width: 86px;
-                height: 86px;
-            }
+            
             h5 {
                 font-weight: bold;
                 font-size: 25px;

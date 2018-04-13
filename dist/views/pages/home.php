@@ -113,8 +113,8 @@
         <div class="button col-sm-offset-4 col-sm-10">
             <div> <a href="#">SEE MORE</a></div>
         </div>
-
     </div>
+
     <div class="spiderContainer col-sm-offset-1  col-sm-11  ">
         <img class="col-sm-3" src="../../assets/img/MARVEL-LEGENDS-SERIES-INFINITY-GAUNTLET-oop-2.png" alt="spider-man">
         <div class="col-sm-offset-1 col-sm-5">

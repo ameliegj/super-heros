@@ -1,7 +1,7 @@
 <?php
-$id_hero = "2268" ;
+$id_hero = "7607" ;
 
-$url3 = 'http://comicvine.gamespot.com/api/character/4005-'.$id_hero.'/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&field_list=name,aliases,deck,real_name,origin,creators,powers,first_appeared_in_issue&format=json';
+$url3 = 'http://comicvine.gamespot.com/api/character/4005-'.$id_hero.'/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&field_list=name,aliases,deck,real_name,origin,creators,powers,first_appeared_in_issue,character_friends,character_enemies&format=json';
     $path3 = './cache/04/' . md5($url3) . '.txt' ;
     if(file_exists($path3) && time() - filemtime($path3) < 43200)
     {
@@ -30,11 +30,45 @@ $aliases = explode("
 
 // first appearence in comics
 $first_comics_id = $infos_hero->first_appeared_in_issue->id;
+$url4 = "https://comicvine.gamespot.com/api/issue/4000-".$first_comics_id."/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&format=json&field_list=name,cover_date,image";
+    $path4 = './cache/05/' . md5($url4) . '.txt' ;
+    if(file_exists($path4) && time() - filemtime($path4) < 43200)
+    {
+        $data4 = file_get_contents($path4);
+        $data4 = json_decode($data4);
+    }
+    else
+    {
+        $curl4 = curl_init($url4);
+        curl_setopt($curl4, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl4, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($curl4, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+        $data4 = curl_exec($curl4);
+        $data4 = json_decode($data4);
+        file_put_contents($path4, json_encode($data4));
+    }
+$first_comic_data = $data4->results;
 
-$rdftgyhjkl = "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-".$first_comics_id."/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&";
+// friends and ennemies
+$all_friends = $infos_hero->character_friends;
+$all_enemies = $infos_hero->character_enemies;
+$friends_keys = array_rand($all_friends, 4);
+$enemies_keys = array_rand($all_enemies, 4);
+function getImage($id)
+{
+    $url_temp = 'https://comicvine.gamespot.com/api/character/4005-'.$id.'/?api_key=e8ac7c91ab822cec84c096c2f38d0636c49fa9fe&field_list=image&format=json';
+    $curl_temp = curl_init($url_temp);
+    curl_setopt($curl_temp, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl_temp, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($curl_temp, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+    $data_temp = curl_exec($curl_temp);
+    $data_temp = json_decode($data_temp);
+    $link = $data_temp->results->image->original_url;
+    return $link;
+}
 
 echo '<pre>';
-var_dump($infos_hero);
+print_r($friends_keys[0]);
 echo '</pre>';
 
 ?>
@@ -91,13 +125,13 @@ echo '</pre>';
                 <div class="appearanceBack">
                     <h4 class="col-lg-7">FIRST APPEARANCE</h4>
                     <div class="timelineContainer">
-                        <div class="comicAppear col-sm-2 appearLegend">
+                        <div class="comicAppear col-sm-3 appearLegend">
                             <span>(COMICS)</span>
-                            <h5>Journey into mistery<?=$first_comics_id?></h5>
+                            <h5><?=$first_comic_data->name?></h5>
                             <div class="triangleTimeline"></div>
                             
                         </div>
-                        <div class="appearLegend col-sm-2 movieAppear">
+                        <div class="appearLegend col-sm-3 movieAppear">
                             <span>(MOVIE)</span>
                             <h5>Thor</h5>
                             <div class="triangleTimeline"></div>
@@ -108,12 +142,18 @@ echo '</pre>';
                             
                         </div>
                         <div class="dateContainer">
-                            <div class="appearLegend comicAppear dateAppear">1962</div>
+                            <div class="appearLegend comicAppear dateAppear">
+                                <?php 
+                                    $array_date = $first_comic_data ->cover_date;
+                                    $year_comic = explode("-", $array_date);
+                                    echo $year_comic[0];
+                                ?>
+                            </div>
                             <div class="appearLegend movieAppear dateAppear dateL">2011</div>
                         </div>
                         <div class="posterContainer col-sm-12">
                             <div class="posterCard cardRight">
-                                <img src="" alt="marvelFilm">
+                                <img src="<?=$first_comic_data->image->original_url?>" alt="marvelFilm">
                             </div>
                             <div class="posterCard cardLeft">
                                 <img src="" alt="marvelFilm">
@@ -148,13 +188,22 @@ echo '</pre>';
             </div>
         </div>
         <div class="relationBack">
+        <h4 class="col-lg-7">RELATIONS</h4>
                     <div class="diagramContainer">
                         <div class="alliesPortraitContainer">
                             <h5>Friends</h5>
-                            <div class="alliesPortrait1 sidePortrait portrait"></div>
-                            <div class="alliesPortrait2 sidePortrait portrait"></div>
-                            <div class="alliesPortrait3 sidePortrait portrait"></div>
-                            <div class="alliesPortrait4 sidePortrait portrait"></div>
+                            <div class="alliesPortrait1 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_friends[$friends_keys[0]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="alliesPortrait2 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_friends[$friends_keys[1]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="alliesPortrait3 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_friends[$friends_keys[2]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="alliesPortrait4 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_friends[$friends_keys[3]]->id);
+                            ?>);background-size:cover"></div>
                         </div>
                         <div class="mainPortraitContainer">
                             <div class="mainPortrait portrait">
@@ -162,10 +211,18 @@ echo '</pre>';
                         </div>
                         <div class="vilainsPortraitContainer">
                             <h5>Ennemies</h5>
-                            <div class="vilainsPortrait1 sidePortrait portrait"></div>
-                            <div class="vilainsPortrait2 sidePortrait portrait"></div>
-                            <div class="vilainsPortrait3 sidePortrait portrait"></div>
-                            <div class="vilainsPortrait4 sidePortrait portrait"></div>
+                            <div class="vilainsPortrait1 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_enemies[$enemies_keys[0]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="vilainsPortrait2 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_enemies[$enemies_keys[1]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="vilainsPortrait3 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_enemies[$enemies_keys[2]]->id);
+                            ?>);background-size:cover"></div>
+                            <div class="vilainsPortrait4 sidePortrait portrait" style="background:url(<?php
+                                echo getImage($all_enemies[$enemies_keys[3]]->id);
+                            ?>);background-size:cover"></div>
                         </div>
                     </div>
         </div>
@@ -184,16 +241,16 @@ echo '</pre>';
 
 </section>
 
- <?
+<?
     
     if (strpos($q, 'heroes/') !== false) {
 
-    echo '<script src="../../assets/js/main.min.js"> </script>';
+        echo '<script src="../../assets/js/main.min.js"> </script>';
     }
     else{
-      echo '<script src="assets/js/main.min.js"> </script>';
+        echo '<script src="assets/js/main.min.js"> </script>';
     }
-  ?>
+?>
 <script>
     heroesAnimation()
 </script>
