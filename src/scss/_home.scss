@@ -59,7 +59,7 @@
         }
     }
     .wheelContainer {
-        height: 630px;
+        height: 830px;
         background: $black;
         .midWheel {
             position: relative;
@@ -102,24 +102,25 @@
                     transform-origin: 0;
                 }
                 .linkRFlat3 {
-                    top: calc(40% - 1px);
-                    left: 35%;
+                    top: calc(50% - 1px);
+                    left: 70%;
 
                 }
 
 
             }
             .infoCadre1 {
-                top: 100px;
-                left: 181px;
+                top: -72px;
+                right: -210px;
             }
             .infoCadre2 {
-                top: 503px;
-                left: -293px;
+                top: 313px;
+                left: -330px;
+                
             }
             .infoCadre3 {
-                top: 329px;
-                left: -30px;
+                top: 205px;
+                left: -122px;
             }
         }
         .animcard2 {

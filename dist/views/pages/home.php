@@ -24,19 +24,22 @@
 
                 $req = $pdo->query('SELECT * FROM facts');
                 $facts = $req->fetchAll();
+
                 ?>
-                <p><?= ChromePhp::log($facts[0]); ?></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p class="randomQuote0"><?= print_r($facts[0]->fact) ?></p>
+                <p class="randomQuote1"><?= print_r($facts[1]->fact) ?></p>
+                <p class="randomQuote2"><?= print_r($facts[2]->fact) ?></p>
+                <p class="randomQuote3"><?= print_r($facts[3]->fact) ?></p>
+                <p class="randomQuote4"><?= print_r($facts[4]->fact) ?></p>
+                <p class="randomQuote5"><?= print_r($facts[5]->fact) ?></p>
+                <p class="randomQuote6"><?= print_r($facts[6]->fact) ?></p>
+                <p class="randomQuote7"><?= print_r($facts[7]->fact) ?></p>
+                <p class="randomQuote8"><?= print_r($facts[8]->fact) ?></p>
+                <p class="randomQuote9"><?= print_r($facts[9]->fact) ?></p>
+                <p class="randomQuote10"><?= print_r($facts[10]->fact) ?></p>
+                
             </div>
+
             <div class="animcard2">
                 <div class="animToreBar">
                     <?php

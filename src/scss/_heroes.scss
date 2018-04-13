@@ -4,6 +4,7 @@
     height: auto;
     font-family: 'Lato';
     margin-top: 50px;
+    
     header {
         background-color: white;
         height: 40px;
@@ -12,7 +13,78 @@
             color: black;
         }
     }
-    .nameBar {
+    .backgroundContainer{
+        .background{
+            position: absolute;
+            opacity: 0.2;
+        }
+        .background1{
+            right: -150px;
+            top:300px;
+            img{
+                height:814px;
+            }
+            
+        }
+        .background2{
+            left: -752px;
+            top:1400px;
+            img{
+                height:440px;
+                transform: rotate(90deg)
+            }
+            
+        }
+        .background3{
+            right: -300px;
+            top:2000px;
+            img{
+                height:969px;
+            }
+            
+        }
+        
+    }
+
+    form {
+        margin-top: 80px;
+        input,select{
+            height:20px;
+        }
+        .form-1 {
+            border: solid;
+            border-color: white;
+            margin-top: 40px;
+            background-color: white;
+            transform: skewX(-30deg);
+
+            input {
+                color: black;
+                transform: skewX(30deg);
+                
+            }
+
+
+        }
+        .form-2 {
+            border: solid;
+            border-color: red;
+            background-color: red;
+            margin-top: 40px;
+            transform: skewX(-30deg);
+            input {
+                transform: skewX(30deg);
+            }
+            select {
+                transform: skewX(30deg);
+            }
+            i{
+                transform: skewX(30deg);
+            }
+        }
+    }
+
+    .nameBar{
         position: absolute;
         left: 0;
         width: 80px;
@@ -27,7 +99,7 @@
     article {
         padding: 0;
         color: white;
-        font-family: "Lato";
+        
         .heroName {
             margin-top: 80px;
             padding: 0;
